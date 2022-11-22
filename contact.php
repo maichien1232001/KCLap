@@ -10,7 +10,7 @@
            <div class="col-md-12"><!-- col-md-12 Begin -->
                
                <ul class="breadcrumb"><!-- breadcrumb Begin -->
-                   <li>
+                   <li> 
                        <a href="index.php">Home</a>
                    </li>
                    <li>

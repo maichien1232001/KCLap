@@ -10,12 +10,12 @@
 
 <div class="row"><!-- row no: 1 begin -->
     <div class="col-lg-12"><!-- col-lg-12 begin -->
-        <h1 class="page-header"> Dashboard </h1>
+        <h1 class="page-header"> Bảng tin </h1>
         
         <ol class="breadcrumb"><!-- breadcrumb begin -->
             <li class="active"><!-- active begin -->
             
-                <i class="fa fa-dashboard"></i> Dashboard
+                <i class="fa fa-dashboard"></i> Bảng tin
             
             </li><!-- active finish -->
         </ol><!-- breadcrumb finish -->
@@ -39,7 +39,7 @@
                     <div class="col-xs-9 text-right"><!-- col-xs-9 text-right begin -->
                         <div class="huge"> <?php echo $count_products; ?> </div>
                            
-                        <div> Products </div>
+                        <div> Sản phẩm </div>
                         
                     </div><!-- col-xs-9 text-right finish -->
                     
@@ -50,7 +50,7 @@
                 <div class="panel-footer"><!-- panel-footer begin -->
                    
                     <span class="pull-left"><!-- pull-left begin -->
-                        View Details 
+                        Xem thông tin đầy đủ
                     </span><!-- pull-left finish -->
                     
                     <span class="pull-right"><!-- pull-right begin --> 
@@ -79,7 +79,7 @@
                     <div class="col-xs-9 text-right"><!-- col-xs-9 text-right begin -->
                         <div class="huge"> <?php echo $count_customers; ?> </div>
                            
-                        <div> Customers </div>
+                        <div> Khách hàng </div>
                         
                     </div><!-- col-xs-9 text-right finish -->
                     
@@ -90,7 +90,7 @@
                 <div class="panel-footer"><!-- panel-footer begin -->
                    
                     <span class="pull-left"><!-- pull-left begin -->
-                        View Details 
+                        Xem thông tin đầy đủ
                     </span><!-- pull-left finish -->
                     
                     <span class="pull-right"><!-- pull-right begin --> 
@@ -119,7 +119,7 @@
                     <div class="col-xs-9 text-right"><!-- col-xs-9 text-right begin -->
                         <div class="huge"> <?php echo $count_p_categories; ?> </div>
                            
-                        <div> Product Categories </div>
+                        <div> Danh mục sản phẩm </div>
                         
                     </div><!-- col-xs-9 text-right finish -->
                     
@@ -130,7 +130,7 @@
                 <div class="panel-footer"><!-- panel-footer begin -->
                    
                     <span class="pull-left"><!-- pull-left begin -->
-                        View Details 
+                        Xem thông tin đầy đủ 
                     </span><!-- pull-left finish -->
                     
                     <span class="pull-right"><!-- pull-right begin --> 
@@ -159,7 +159,7 @@
                     <div class="col-xs-9 text-right"><!-- col-xs-9 text-right begin -->
                         <div class="huge"> <?php echo $count_pending_orders; ?> </div>
                            
-                        <div> Orders </div>
+                        <div> Đơn hàng </div>
                         
                     </div><!-- col-xs-9 text-right finish -->
                     
@@ -170,7 +170,7 @@
                 <div class="panel-footer"><!-- panel-footer begin -->
                    
                     <span class="pull-left"><!-- pull-left begin -->
-                        View Details 
+                        Xem thông tin đầy đủ 
                     </span><!-- pull-left finish -->
                     
                     <span class="pull-right"><!-- pull-right begin --> 
@@ -193,7 +193,7 @@
             <div class="panel-heading"><!-- panel-heading begin -->
                 <h3 class="panel-title"><!-- panel-title begin -->
                     
-                    <i class="fa fa-money fa-fw"></i> New Orders
+                    <i class="fa fa-money fa-fw"></i> Đơn hàng mới 
                     
                 </h3><!-- panel-title finish -->
             </div><!-- panel-heading finish -->
@@ -206,13 +206,13 @@
                           
                             <tr><!-- th begin -->
                            
-                                <th> Order no: </th>
-                                <th> Customer Email: </th>
-                                <th> Invoice No: </th>
-                                <th> Product ID: </th>
-                                <th> Product Qty: </th>
-                                <th> Product Size: </th>
-                                <th> Status: </th>
+                                <th> Đơn hàng số </th>
+                                <th> Email khách hàng </th>
+                                <th> Số hóa đơn </th>
+                                <th> Mã sản phẩm </th>
+                                <th> Số lượng sản phẩm </th>
+                                <th> Loại sản phẩm </th>
+                                <th> Trạng thái </th>
                             
                             </tr><!-- th finish -->
                             
@@ -278,11 +278,11 @@
                                     
                                         if($order_status=='pending'){
                                             
-                                            echo $order_status='pending';
+                                            echo $order_status='Đang chờ thanh toán';
                                             
                                         }else{
                                             
-                                            echo $order_status='Complete';
+                                            echo $order_status='Đã thanh toán';
                                             
                                         }
                                     
@@ -303,7 +303,7 @@
                     
                     <a href="index.php?view_orders"><!-- a href begin -->
                         
-                        View All Orders <i class="fa fa-arrow-circle-right"></i>
+                        Xem tất cả đơn hàng <i class="fa fa-arrow-circle-right"></i>
                         
                     </a><!-- a href finish -->
                     
@@ -333,13 +333,13 @@
                 <div class="mb-md"><!-- mb-md begin -->
                     <div class="widget-content-expanded"><!-- widget-content-expanded begin -->
                         <i class="fa fa-user"></i> <span> Email: </span> <?php echo $admin_email; ?> <br/>
-                        <i class="fa fa-flag"></i> <span> Country: </span> <?php echo $admin_country; ?> <br/>
-                        <i class="fa fa-envelope"></i> <span> Contact: </span> <?php echo $admin_contact; ?> <br/>
+                        <i class="fa fa-flag"></i> <span> Quốc gia: </span> <?php echo $admin_country; ?> <br/>
+                        <i class="fa fa-envelope"></i> <span> Liên hệ: </span> <?php echo $admin_contact; ?> <br/>
                     </div><!-- widget-content-expanded finish -->
                     
                     <hr class="dotted short">
                     
-                    <h5 class="text-muted"> About Me </h5>
+                    <h5 class="text-muted"> Đôi chút giới thiệu </h5>
                     
                     <p><!-- p begin -->
                         
