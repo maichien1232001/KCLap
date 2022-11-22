@@ -25,7 +25,7 @@
             
             <li class="active"><!-- active Begin -->
                 
-                <i class="fa fa-dashboard"></i> Dashboard / Insert Coupons
+                <i class="fa fa-dashboard"></i> Bảng tin / Thêm mã giảm giá
                 
             </li><!-- active Finish -->
             
@@ -45,7 +45,7 @@
                
                <h3 class="panel-title"><!-- panel-title Begin -->
                    
-                   <i class="fa fa-money fa-fw"></i> Insert Coupons 
+                   <i class="fa fa-money fa-fw"></i> Thêm mã giảm giá
                    
                </h3><!-- panel-title Finish -->
                
@@ -57,7 +57,7 @@
                    
                    <div class="form-group"><!-- form-group Begin -->
                        
-                      <label class="col-md-3 control-label"> Coupon Title </label> 
+                      <label class="col-md-3 control-label"> Tên phiếu giảm giá </label> 
                       
                       <div class="col-md-6"><!-- col-md-6 Begin -->
                           
@@ -69,7 +69,7 @@
                    
                    <div class="form-group"><!-- form-group Begin -->
                        
-                      <label class="col-md-3 control-label"> Coupon Price </label> 
+                      <label class="col-md-3 control-label"> Mã phiếu giảm giá </label> 
                       
                       <div class="col-md-6"><!-- col-md-6 Begin -->
                           
@@ -81,7 +81,7 @@
                    
                    <div class="form-group"><!-- form-group Begin -->
                        
-                      <label class="col-md-3 control-label"> Coupon Limit </label> 
+                      <label class="col-md-3 control-label"> Giới hạn phiếu giảm giá </label> 
                       
                       <div class="col-md-6"><!-- col-md-6 Begin -->
                           
@@ -93,13 +93,13 @@
                    
                    <div class="form-group"><!-- form-group Begin -->
                        
-                      <label class="col-md-3 control-label"> Select Product </label> 
+                      <label class="col-md-3 control-label"> Chọn sản phẩm </label> 
                       
                       <div class="col-md-6"><!-- col-md-6 Begin -->
                           
                           <select name="product_id" class="form-control" required>
                           
-                            <option selected disabled>Select Product For Coupon</option>
+                            <option selected disabled>Chọn sản phẩm áp dụng phiếu giảm giá</option>
 
                             <?php 
                             
@@ -125,7 +125,7 @@
                    
                    <div class="form-group"><!-- form-group Begin -->
                        
-                      <label class="col-md-3 control-label"> Coupon Code </label> 
+                      <label class="col-md-3 control-label"> Mã phiếu giảm giá </label> 
                       
                       <div class="col-md-6"><!-- col-md-6 Begin -->
                           
@@ -175,7 +175,7 @@ if(isset($_POST['submit'])){
 
     if($check_coupons==1){
 
-        echo "<script>alert('Coupon Code / Product Already Added. Choose Another Coupon Code / Product')</script>";
+        echo "<script>alert('Phiếu giảm giá này đã tồn tại. Vui lòng tạo phiếu mới')</script>";
 
     }else{
 
@@ -184,7 +184,7 @@ if(isset($_POST['submit'])){
 
         if($run_coupon){
 
-            echo "<script>alert('Your Coupon Has Been Created')</script>";
+            echo "<script>alert('Phiếu giảm giá tạo thành công')</script>";
             echo "<script>window.open('index.php?view_coupons','_self')</script>";
 
         }

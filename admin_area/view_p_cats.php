@@ -13,7 +13,7 @@
         <ol class="breadcrumb"><!-- breadcrumb begin -->
             <li>
                 
-                <i class="fa fa-dashboard"></i> Dashboard / View Product Categories
+                <i class="fa fa-dashboard"></i> Bảng tin / Xem danh mục sản phẩm
                 
             </li>
         </ol><!-- breadcrumb finish -->
@@ -26,7 +26,7 @@
             <div class="panel-heading"><!-- panel-heading begin -->
                 <h3 class="panel-title"><!-- panel-title begin -->
                 
-                    <i class="fa fa-tags fa-fw"></i> View Product Categories
+                    <i class="fa fa-tags fa-fw"></i> Xem danh mục sản phẩm
                 
                 </h3><!-- panel-title finish -->
             </div><!-- panel-heading finish -->
@@ -37,11 +37,11 @@
                         
                         <thead><!-- thead begin -->
                             <tr><!-- tr begin -->
-                                <th> Product Category ID </th>
-                                <th> Product Category Title </th>
-                                <th> Top Product Category </th>
-                                <th> Edit Product Category </th>
-                                <th> Delete Product Category </th>
+                                <th> Mã danh mục sản phẩm ID </th>
+                                <th> Têm danh mục sản phẩm Title </th>
+                                <th> Top danh mục sản phẩm </th>
+                                <th> Sửa danh mục sản phẩm </th>
+                                <th> Delete danh mục sản phẩm </th>
                             </tr><!-- tr finish -->
                         </thead><!-- thead finish -->
                         
@@ -73,7 +73,7 @@
                                 <td width="300"> <?php echo $p_cat_top; ?> </td>
                                 <td> 
                                     <a href="index.php?edit_p_cat= <?php echo $p_cat_id; ?> ">
-                                        <i class="fa fa-pencil"></i> Edit
+                                        <i class="fa fa-pencil"></i> Sửa
                                     </a>
                                 </td>
                                 <td> 

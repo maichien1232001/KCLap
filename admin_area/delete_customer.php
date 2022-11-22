@@ -20,7 +20,7 @@
         
         if($run_delete){
             
-            echo "<script>alert('One of your costumer has been Deleted')</script>";
+            echo "<script>alert('Bạn đã xóa thành công khách hàng')</script>";
             
             echo "<script>window.open('index.php?view_customers','_self')</script>";
             

@@ -77,7 +77,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> Insert Products </title>
+    <title> Sửa sản phẩm </title>
 </head>
 <body>
     
@@ -109,7 +109,7 @@
                
                <h3 class="panel-title"><!-- panel-title Begin -->
                    
-                   <i class="fa fa-money fa-fw"></i> Thêm sản phẩm 
+                   <i class="fa fa-money fa-fw"></i> Sửa sản phẩm 
                    
                </h3><!-- panel-title Finish -->
                

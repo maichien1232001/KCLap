@@ -44,7 +44,7 @@ if(isset($_GET['edit_coupon'])){
             
             <li class="active"><!-- active Begin -->
                 
-                <i class="fa fa-dashboard"></i> Dashboard / Edit Coupons
+                <i class="fa fa-dashboard"></i> Bảng tin / Sửa mã giảm giá
                 
             </li><!-- active Finish -->
             
@@ -64,7 +64,7 @@ if(isset($_GET['edit_coupon'])){
                
                <h3 class="panel-title"><!-- panel-title Begin -->
                    
-                   <i class="fa fa-money fa-fw"></i> Edit Coupons 
+                   <i class="fa fa-money fa-fw"></i> Sửa mã giảm giá 
                    
                </h3><!-- panel-title Finish -->
                
@@ -76,7 +76,7 @@ if(isset($_GET['edit_coupon'])){
                    
                    <div class="form-group"><!-- form-group Begin -->
                        
-                      <label class="col-md-3 control-label"> Coupon Title </label> 
+                      <label class="col-md-3 control-label"> Tên mã giảm giá </label> 
                       
                       <div class="col-md-6"><!-- col-md-6 Begin -->
                           
@@ -88,7 +88,7 @@ if(isset($_GET['edit_coupon'])){
                    
                    <div class="form-group"><!-- form-group Begin -->
                        
-                      <label class="col-md-3 control-label"> Coupon Price </label> 
+                      <label class="col-md-3 control-label"> Mức giảm giá </label> 
                       
                       <div class="col-md-6"><!-- col-md-6 Begin -->
                           
@@ -100,7 +100,7 @@ if(isset($_GET['edit_coupon'])){
                    
                    <div class="form-group"><!-- form-group Begin -->
                        
-                      <label class="col-md-3 control-label"> Coupon Limit </label> 
+                      <label class="col-md-3 control-label"> Số lần giới hạn </label> 
                       
                       <div class="col-md-6"><!-- col-md-6 Begin -->
                           
@@ -112,7 +112,7 @@ if(isset($_GET['edit_coupon'])){
                    
                    <div class="form-group"><!-- form-group Begin -->
                        
-                      <label class="col-md-3 control-label"> Select Product </label> 
+                      <label class="col-md-3 control-label"> Chọn sản phẩm </label> 
                       
                       <div class="col-md-6"><!-- col-md-6 Begin -->
                           
@@ -144,7 +144,7 @@ if(isset($_GET['edit_coupon'])){
                    
                    <div class="form-group"><!-- form-group Begin -->
                        
-                      <label class="col-md-3 control-label"> Coupon Code </label> 
+                      <label class="col-md-3 control-label"> Mã giảm giá </label> 
                       
                       <div class="col-md-6"><!-- col-md-6 Begin -->
                           
@@ -191,7 +191,7 @@ if(isset($_POST['update'])){
 
     if($run_update_coupon){
 
-        echo "<script>alert('Your Coupon Has Been Updated')</script>";
+        echo "<script>alert('Mã giảm giá đã được cập nhật thành công')</script>";
         echo "<script>window.open('index.php?view_coupons','_self')</script>";
 
     }

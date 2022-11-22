@@ -13,7 +13,7 @@
         <ol class="breadcrumb"><!-- breadcrumb begin -->
             <li>
                 
-                <i class="fa fa-dashboard"></i> Dashboard / View Slides
+                <i class="fa fa-dashboard"></i> Bảng tin / Xem slogan
                 
             </li>
         </ol><!-- breadcrumb finish -->
@@ -26,7 +26,7 @@
             <div class="panel-heading"><!-- panel-heading begin -->
                 <h3 class="panel-title"><!-- panel-title begin -->
                 
-                    <i class="fa fa-tags fa-fw"></i> View Slides
+                    <i class="fa fa-tags fa-fw"></i> Xem slogan
                 
                 </h3><!-- panel-title finish -->
             </div><!-- panel-heading finish -->
@@ -70,13 +70,13 @@
                                 
                                 <a href="index.php?delete_slide=<?php echo $slide_id; ?>" class="pull-right"><!-- pull-right begin -->
                                 
-                                 <i class="fa fa-trash"></i> Delete
+                                 <i class="fa fa-trash"></i> Xóa
                                 
                                 </a><!-- pull-right finish -->
                                 
                                 <a href="index.php?edit_slide=<?php echo $slide_id; ?>" class="pull-left"><!-- pull-left begin -->
                                 
-                                 <i class="fa fa-pencil"></i> Edit
+                                 <i class="fa fa-pencil"></i> Sửa
                                 
                                 </a><!-- pull-left finish -->
                                 

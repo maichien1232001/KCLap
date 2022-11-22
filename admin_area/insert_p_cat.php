@@ -13,7 +13,7 @@
         <ol class="breadcrumb"><!-- breadcrumb begin -->
             <li>
                 
-                <i class="fa fa-dashboard"></i> Dashboard / Insert Product Category
+                <i class="fa fa-dashboard"></i> Bảng tin / Thêm danh mục sản phẩm
                 
             </li>
         </ol><!-- breadcrumb finish -->
@@ -26,7 +26,7 @@
             <div class="panel-heading"><!-- panel-heading begin -->
                 <h3 class="panel-title"><!-- panel-title begin -->
                 
-                    <i class="fa fa-money fa-fw"></i> Insert Product Category
+                    <i class="fa fa-money fa-fw"></i> Thêm danh mục sản phẩm
                 
                 </h3><!-- panel-title finish -->
             </div><!-- panel-heading finish -->
@@ -37,7 +37,7 @@
                     
                         <label for="" class="control-label col-md-3"><!-- control-label col-md-3 begin --> 
                         
-                            Product Category Title 
+                            Tên danh mục sản phẩm
                         
                         </label><!-- control-label col-md-3 finish --> 
                         
@@ -53,17 +53,17 @@
                     
                         <label for="" class="control-label col-md-3"><!-- control-label col-md-3 begin --> 
                         
-                            Choose As Top Manufacturer
+                            Chọn làm đầu đề
                         
                         </label><!-- control-label col-md-3 finish --> 
                         
                         <div class="col-md-6"><!-- col-md-6 begin -->
                         
                             <input name="p_cat_top" type="radio" value="yes">
-                            <label>Yes</label>
+                            <label>Có</label>
                         
                             <input name="p_cat_top" type="radio" value="no">
-                            <label>No</label>
+                            <label>Không</label>
                         
                         </div><!-- col-md-6 finish -->
                     
@@ -73,7 +73,7 @@
                     
                         <label for="" class="control-label col-md-3"><!-- control-label col-md-3 begin --> 
                         
-                        Product Category Image
+                        Ảnh danh mục sản phẩm
                         
                         </label><!-- control-label col-md-3 finish --> 
                         
@@ -125,7 +125,7 @@
               
               if($run_p_cat){
                   
-                  echo "<script>alert('Your New Product Category Has Been Inserted')</script>";
+                  echo "<script>alert('Danh mục sản phẩm thêm thành công')</script>";
                   
                   echo "<script>window.open('index.php?view_p_cats','_self')</script>";
                   

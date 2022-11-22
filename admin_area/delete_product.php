@@ -20,7 +20,7 @@
         
         if($run_delete){
             
-            echo "<script>alert('One of your product has been Deleted')</script>";
+            echo "<script>alert('Bạn đã xóa sản phẩm thành công')</script>";
             
             echo "<script>window.open('index.php?view_products','_self')</script>";
             

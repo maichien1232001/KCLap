@@ -16,7 +16,7 @@
             
             <li class="active"><!-- active Begin -->
                 
-                <i class="fa fa-dashboard"></i> Dashboard / Insert User
+                <i class="fa fa-dashboard"></i> Bảng tin / Thêm admin
                 
             </li><!-- active Finish -->
             
@@ -36,7 +36,7 @@
                
                <h3 class="panel-title"><!-- panel-title Begin -->
                    
-                   <i class="fa fa-money fa-fw"></i> Insert User
+                   <i class="fa fa-money fa-fw"></i> Tên admin
                    
                </h3><!-- panel-title Finish -->
                
@@ -48,7 +48,7 @@
                    
                    <div class="form-group"><!-- form-group Begin -->
                        
-                      <label class="col-md-3 control-label"> Username </label> 
+                      <label class="col-md-3 control-label"> Ten đăng nhập </label> 
                       
                       <div class="col-md-6"><!-- col-md-6 Begin -->
                           
@@ -72,7 +72,7 @@
                    
                    <div class="form-group"><!-- form-group Begin -->
                        
-                      <label class="col-md-3 control-label"> Password </label> 
+                      <label class="col-md-3 control-label"> Mật khẩu </label> 
                       
                       <div class="col-md-6"><!-- col-md-6 Begin -->
                           
@@ -84,7 +84,7 @@
                    
                    <div class="form-group"><!-- form-group Begin -->
                        
-                      <label class="col-md-3 control-label"> Country </label> 
+                      <label class="col-md-3 control-label"> Quốc gia </label> 
                       
                       <div class="col-md-6"><!-- col-md-6 Begin -->
                           
@@ -96,7 +96,7 @@
                    
                    <div class="form-group"><!-- form-group Begin -->
                        
-                      <label class="col-md-3 control-label"> Contact </label> 
+                      <label class="col-md-3 control-label"> Liên hệ </label> 
                       
                       <div class="col-md-6"><!-- col-md-6 Begin -->
                           
@@ -108,7 +108,7 @@
                    
                    <div class="form-group"><!-- form-group Begin -->
                        
-                      <label class="col-md-3 control-label"> Job </label> 
+                      <label class="col-md-3 control-label"> Nghề nghiệp </label> 
                       
                       <div class="col-md-6"><!-- col-md-6 Begin -->
                           
@@ -120,7 +120,7 @@
                    
                    <div class="form-group"><!-- form-group Begin -->
                        
-                      <label class="col-md-3 control-label"> Image </label> 
+                      <label class="col-md-3 control-label"> Ảnh </label> 
                       
                       <div class="col-md-6"><!-- col-md-6 Begin -->
                           
@@ -132,7 +132,7 @@
                    
                    <div class="form-group"><!-- form-group Begin -->
                        
-                      <label class="col-md-3 control-label"> About </label> 
+                      <label class="col-md-3 control-label"> Đôi chút giới thiệu </label> 
                       
                       <div class="col-md-6"><!-- col-md-6 Begin -->
                           
@@ -188,7 +188,7 @@ if(isset($_POST['submit'])){
     
     if($run_user){
         
-        echo "<script>alert('New User has been inserted to your admin sucessfully')</script>";
+        echo "<script>alert('Thêm thành công quản trị viên')</script>";
         echo "<script>window.open('index.php?view_users','_self')</script>";
         
     }

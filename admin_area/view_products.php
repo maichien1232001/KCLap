@@ -13,7 +13,7 @@
         <ol class="breadcrumb"><!-- breadcrumb begin -->
             <li class="active"><!-- active begin -->
                 
-                <i class="fa fa-dashboard"></i> Dashboard / View Products
+                <i class="fa fa-dashboard"></i> Bảng tin / Xem sản phẩm
                 
             </li><!-- active finish -->
         </ol><!-- breadcrumb finish -->
@@ -26,7 +26,7 @@
             <div class="panel-heading"><!-- panel-heading begin -->
                <h3 class="panel-title"><!-- panel-title begin -->
                
-                   <i class="fa fa-tags"></i>  View Products
+                   <i class="fa fa-tags"></i>  Xem sản phẩm
                 
                </h3><!-- panel-title finish --> 
             </div><!-- panel-heading finish -->
@@ -37,15 +37,15 @@
                         
                         <thead><!-- thead begin -->
                             <tr><!-- tr begin -->
-                                <th> Product ID: </th>
-                                <th> Product Title: </th>
-                                <th> Product Image: </th>
-                                <th> Product Price: </th>
-                                <th> Product Sold: </th>
-                                <th> Product Keywords: </th>
-                                <th> Product Date: </th>
-                                <th> Product Delete: </th>
-                                <th> Product Edit: </th>
+                                <th> Mã sản phẩm  </th>
+                                <th> Tên sản phẩm  </th>
+                                <th> Ảnh sản phẩm  </th>
+                                <th> Giá sản phẩm </th>
+                                <th> Số sản phẩm đã bán </th>
+                                <th> Từ khóa sản phẩm </th>
+                                <th> Ngày tạo sản phẩm  </th>
+                                <th> Xóa sản phẩm  </th>
+                                <th> Sửa sản phẩm  </th>
                             </tr><!-- tr finish -->
                         </thead><!-- thead finish -->
                         
@@ -100,7 +100,7 @@
                                      
                                      <a href="index.php?delete_product=<?php echo $pro_id; ?>">
                                      
-                                        <i class="fa fa-trash-o"></i> Delete
+                                        <i class="fa fa-trash-o"></i> Xóa
                                     
                                      </a> 
                                      
@@ -109,7 +109,7 @@
                                      
                                      <a href="index.php?edit_product=<?php echo $pro_id; ?>">
                                      
-                                        <i class="fa fa-pencil"></i> Edit
+                                        <i class="fa fa-pencil"></i> Sửa
                                     
                                      </a> 
                                     

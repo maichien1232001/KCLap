@@ -20,7 +20,7 @@
         
         if($run_delete_term){
             
-            echo "<script>alert('One of Your term Section Has Been Deleted')</script>";
+            echo "<script>alert('Bạn đã xóa chính sách thành công')</script>";
             
             echo "<script>window.open('index.php?view_terms','_self')</script>";
             

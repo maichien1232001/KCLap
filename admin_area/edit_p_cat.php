@@ -37,7 +37,7 @@
         <ol class="breadcrumb"><!-- breadcrumb begin -->
             <li>
                 
-                <i class="fa fa-dashboard"></i> Dashboard / Edit Product Category
+                <i class="fa fa-dashboard"></i> Bảng tin / Sửa danh mục sản phẩm
                 
             </li>
         </ol><!-- breadcrumb finish -->
@@ -50,7 +50,7 @@
             <div class="panel-heading"><!-- panel-heading begin -->
                 <h3 class="panel-title"><!-- panel-title begin -->
                 
-                    <i class="fa fa-pencil fa-fw"></i> Edit Product Category
+                    <i class="fa fa-pencil fa-fw"></i> Sửa danh mục sản phẩm
                 
                 </h3><!-- panel-title finish -->
             </div><!-- panel-heading finish -->
@@ -61,7 +61,7 @@
                     
                         <label for="" class="control-label col-md-3"><!-- control-label col-md-3 begin --> 
                         
-                            Product Category Title 
+                            Tên danh mục sản phẩm
                         
                         </label><!-- control-label col-md-3 finish --> 
                         
@@ -77,7 +77,7 @@
                     
                         <label for="" class="control-label col-md-3"><!-- control-label col-md-3 begin --> 
                         
-                            Choose As Top Manufacturer
+                            Chọn để đưa lên đầu
                         
                         </label><!-- control-label col-md-3 finish --> 
                         
@@ -92,7 +92,7 @@
                             ?>
                         
                         >
-                        <label>Yes</label>
+                        <label>Có</label>
                     
                         <input name="p_cat_top" type="radio" value="no"
                         
@@ -103,7 +103,7 @@
                             ?>
                         
                         >
-                        <label>No</label>
+                        <label>Không</label>
                         
                         </div><!-- col-md-6 finish -->
                     
@@ -113,7 +113,7 @@
                     
                         <label for="" class="control-label col-md-3"><!-- control-label col-md-3 begin --> 
                         
-                        Category Image
+                        Hình ảnh danh mục sản phẩm
                         
                         </label><!-- control-label col-md-3 finish --> 
                         
@@ -169,7 +169,7 @@
                 
                 if($run_p_cat){
                     
-                    echo "<script>alert('Your Product Category Has Been Updated')</script>";
+                    echo "<script>alert('Danh mục sản phẩm đã cập nhật thành công')</script>";
                     
                     echo "<script>window.open('index.php?view_p_cats','_self')</script>";
                     
@@ -183,7 +183,7 @@
                 
                 if($run_p_cat){
                     
-                    echo "<script>alert('Your Product Category Has Been Updated')</script>";
+                    echo "<script>alert('Danh mục sản phẩm đã cập nhật thành công')</script>";
                     
                     echo "<script>window.open('index.php?view_p_cats','_self')</script>";
                     

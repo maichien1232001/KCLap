@@ -13,7 +13,7 @@
         <ol class="breadcrumb"><!-- breadcrumb begin -->
             <li>
                 
-                <i class="fa fa-dashboard"></i> Dashboard / Insert Slide
+                <i class="fa fa-dashboard"></i> Bảng tin / Thêm slide
                 
             </li>
         </ol><!-- breadcrumb finish -->
@@ -37,7 +37,7 @@
                     
                         <label for="" class="control-label col-md-3"><!-- control-label col-md-3 begin --> 
                         
-                            Slide Name 
+                            Tên slide
                         
                         </label><!-- control-label col-md-3 finish --> 
                         
@@ -52,7 +52,7 @@
                     
                         <label for="" class="control-label col-md-3"><!-- control-label col-md-3 begin --> 
                         
-                            Slide Url
+                           Link slide
                         
                         </label><!-- control-label col-md-3 finish --> 
                         
@@ -67,7 +67,7 @@
                     
                         <label for="" class="control-label col-md-3"><!-- control-label col-md-3 begin --> 
                         
-                            Slide Image
+                            Ảnh slide
                         
                         </label><!-- control-label col-md-3 finish --> 
                         
@@ -122,13 +122,13 @@
             
             $run_slide = mysqli_query($con,$insert_slide);
             
-            echo "<script>alert('Your new slide image has been inserted')</script>";
+            echo "<script>alert('Thêm slide thành công')</script>";
             
             echo "<script>window.open('index.php?view_slides','_self')</script>";
             
         }else{
             
-           echo "<script>alert('You have already inserted 4 slides')</script>"; 
+           echo "<script>alert('Bạn đã thêm 4 slides rồi')</script>"; 
             
         }
         

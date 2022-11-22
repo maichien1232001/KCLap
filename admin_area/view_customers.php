@@ -13,7 +13,7 @@
         <ol class="breadcrumb"><!-- breadcrumb begin -->
             <li class="active"><!-- active begin -->
                 
-                <i class="fa fa-dashboard"></i> Dashboard / View Costumers
+                <i class="fa fa-dashboard"></i> Bảng tin / Xem khách hàng
                 
             </li><!-- active finish -->
         </ol><!-- breadcrumb finish -->
@@ -26,7 +26,7 @@
             <div class="panel-heading"><!-- panel-heading begin -->
                <h3 class="panel-title"><!-- panel-title begin -->
                
-                   <i class="fa fa-tags"></i>  View Costumers
+                   <i class="fa fa-tags"></i>  Xem khách hàng
                 
                </h3><!-- panel-title finish --> 
             </div><!-- panel-heading finish -->
@@ -37,15 +37,15 @@
                         
                         <thead><!-- thead begin -->
                             <tr><!-- tr begin -->
-                                <th> No: </th>
-                                <th> Name: </th>
-                                <th> Image: </th>
-                                <th> E-Mail: </th>
-                                <th> Country: </th>
-                                <th> City: </th>
-                                <th> Address: </th>
-                                <th> Contact: </th>
-                                <th> Delete: </th>
+                                <th> Mã </th>
+                                <th> Tên </th>
+                                <th> Ảnh </th>
+                                <th> E-Mail </th>
+                                <th> Quốc gia </th>
+                                <th> Thành phố </th>
+                                <th> Địa chỉ </th>
+                                <th> Liên hệ </th>
+                                <th> Xóa </th>
                             </tr><!-- tr finish -->
                         </thead><!-- thead finish -->
                         
@@ -94,7 +94,7 @@
                                      
                                      <a href="index.php?delete_customer=<?php echo $c_id; ?>">
                                      
-                                        <i class="fa fa-trash-o"></i> Delete
+                                        <i class="fa fa-trash-o"></i> Xóa
                                     
                                      </a> 
                                      

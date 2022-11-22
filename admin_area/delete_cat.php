@@ -20,7 +20,7 @@
         
         if($run_delete){
             
-            echo "<script>alert('One of Your Category Has Been Deleted')</script>";
+            echo "<script>alert('Bạn đã xóa thành công danh mục')</script>";
             
             echo "<script>window.open('index.php?view_cats','_self')</script>";
             

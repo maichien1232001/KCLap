@@ -13,7 +13,7 @@
         <ol class="breadcrumb"><!-- breadcrumb begin -->
             <li>
                 
-                <i class="fa fa-dashboard"></i> Dashboard / Insert New Box
+                <i class="fa fa-dashboard"></i> Bảng tin / Thêm slogan
                 
             </li>
         </ol><!-- breadcrumb finish -->
@@ -26,7 +26,7 @@
             <div class="panel-heading"><!-- panel-heading begin -->
                 <h3 class="panel-title"><!-- panel-title begin -->
                 
-                    <i class="fa fa-money fa-fw"></i> Insert Box
+                    <i class="fa fa-money fa-fw"></i> Thêm slogan
                 
                 </h3><!-- panel-title finish -->
             </div><!-- panel-heading finish -->
@@ -37,7 +37,7 @@
                     
                         <label for="" class="control-label col-md-3"><!-- control-label col-md-3 begin --> 
                         
-                            Box Title
+                            Tên slogan
                         
                         </label><!-- control-label col-md-3 finish --> 
                         
@@ -52,7 +52,7 @@
                     
                         <label for="" class="control-label col-md-3"><!-- control-label col-md-3 begin --> 
                         
-                            Box Description
+                            Mô tả slogan
                         
                         </label><!-- control-label col-md-3 finish --> 
                         
@@ -91,7 +91,7 @@
         $insert_box ="insert into boxes_section (box_title,box_desc) values ('$box_title','$box_desc')";
         $run_box = mysqli_query($con,$insert_box);
 
-        echo "<script>alert('New Box Has Been Inserted')</script>";
+        echo "<script>alert('Thêm slogan thành công')</script>";
         echo "<script>window.open('index.php?view_boxes','_self')</script>";
         
     }

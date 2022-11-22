@@ -35,7 +35,7 @@
         <ol class="breadcrumb"><!-- breadcrumb begin -->
             <li>
                 
-                <i class="fa fa-dashboard"></i> Dashboard / Edit Box
+                <i class="fa fa-dashboard"></i> Bảng tin / Sửa slogan
                 
             </li>
         </ol><!-- breadcrumb finish -->
@@ -48,7 +48,7 @@
             <div class="panel-heading"><!-- panel-heading begin -->
                 <h3 class="panel-title"><!-- panel-title begin -->
                 
-                    <i class="fa fa-pencil fa-fw"></i> Edit Box
+                    <i class="fa fa-pencil fa-fw"></i> Sửa slogan
                 
                 </h3><!-- panel-title finish -->
             </div><!-- panel-heading finish -->
@@ -59,7 +59,7 @@
                     
                         <label for="" class="control-label col-md-3"><!-- control-label col-md-3 begin --> 
                         
-                            Box Title 
+                            Tên slogan 
                         
                         </label><!-- control-label col-md-3 finish --> 
                         
@@ -74,7 +74,7 @@
                     
                         <label for="" class="control-label col-md-3"><!-- control-label col-md-3 begin --> 
                         
-                            Box Description 
+                            Mô tả slogan 
                         
                         </label><!-- control-label col-md-3 finish --> 
                         
@@ -121,7 +121,7 @@
               
               if($run_box){
                   
-                  echo "<script>alert('Your Box Has Been Updated')</script>";
+                  echo "<script>alert('Slogan của bạn đã cập nhật thành công')</script>";
                   
                   echo "<script>window.open('index.php?view_boxes','_self')</script>";
                   

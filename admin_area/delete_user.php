@@ -20,7 +20,7 @@
         
         if($run_delete){
             
-            echo "<script>alert('One of your Admins User has been Deleted')</script>";
+            echo "<script>alert('Bạn đã xóa thành công một quản trị viên')</script>";
             
             echo "<script>window.open('index.php?view_users','_self')</script>";
             

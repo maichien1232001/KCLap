@@ -13,7 +13,7 @@
         <ol class="breadcrumb"><!-- breadcrumb begin -->
             <li class="active"><!-- active begin -->
                 
-                <i class="fa fa-dashboard"></i> Dashboard / View Users
+                <i class="fa fa-dashboard"></i> Bảng tin / Xem admin
                 
             </li><!-- active finish -->
         </ol><!-- breadcrumb finish -->
@@ -26,7 +26,7 @@
             <div class="panel-heading"><!-- panel-heading begin -->
                <h3 class="panel-title"><!-- panel-title begin -->
                
-                   <i class="fa fa-tags"></i>  View Users
+                   <i class="fa fa-tags"></i>  Xem admin
                 
                </h3><!-- panel-title finish --> 
             </div><!-- panel-heading finish -->
@@ -37,15 +37,15 @@
                         
                         <thead><!-- thead begin -->
                             <tr><!-- tr begin -->
-                                <th> No: </th>
-                                <th> User Name: </th>
-                                <th> User Image: </th>
-                                <th> User E-Mail: </th>
-                                <th> User Country: </th>
-                                <th> User Job: </th>
-                                <th> User Contact: </th>
-                                <th> Edit: </th>
-                                <th> Delete: </th>
+                                <th> Số </th>
+                                <th> Tên admin </th>
+                                <th> Ảnh admin </th>
+                                <th> Email </th>
+                                <th> Quốc gia </th>
+                                <th> Công việc </th>
+                                <th> Liên hệ </th>
+                                <th> Sửa </th>
+                                <th> Xóa </th>
                             </tr><!-- tr finish -->
                         </thead><!-- thead finish -->
                         
@@ -91,7 +91,7 @@
                                      
                                      <a href="index.php?user_profile=<?php echo $user_id; ?>">
                                      
-                                        <i class="fa fa-pencil"></i> Edit
+                                        <i class="fa fa-pencil"></i> Sửa
                                     
                                      </a> 
                                      
@@ -100,7 +100,7 @@
                                      
                                      <a href="index.php?delete_user=<?php echo $user_id; ?>">
                                      
-                                        <i class="fa fa-trash-o"></i> Delete
+                                        <i class="fa fa-trash-o"></i> Xóa
                                     
                                      </a> 
                                      

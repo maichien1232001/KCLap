@@ -20,7 +20,7 @@
         
         if($run_delete_box){
             
-            echo "<script>alert('One of Your Box Section Has Been Deleted')</script>";
+            echo "<script>alert('Bạn đã xóa thành công slogan')</script>";
             
             echo "<script>window.open('index.php?view_boxes','_self')</script>";
             

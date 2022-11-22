@@ -13,7 +13,7 @@
         <ol class="breadcrumb"><!-- breadcrumb begin -->
             <li class="active"><!-- active begin -->
                 
-                <i class="fa fa-dashboard"></i> Dashboard / View Orders
+                <i class="fa fa-dashboard"></i> Bảng tin / Xem đơn hàng
                 
             </li><!-- active finish -->
         </ol><!-- breadcrumb finish -->
@@ -26,7 +26,7 @@
             <div class="panel-heading"><!-- panel-heading begin -->
                <h3 class="panel-title"><!-- panel-title begin -->
                
-                   <i class="fa fa-tags"></i>  View Orders
+                   <i class="fa fa-tags"></i>  Xem đơn hàng
                 
                </h3><!-- panel-title finish --> 
             </div><!-- panel-heading finish -->
@@ -37,16 +37,16 @@
                         
                         <thead><!-- thead begin -->
                             <tr><!-- tr begin -->
-                                <th> No: </th>
-                                <th> Customer Email: </th>
-                                <th> Invoice No: </th>
-                                <th> Product Name: </th>
-                                <th> Product Qty: </th>
-                                <th> Product Type: </th>
-                                <th> Order Date: </th>
-                                <th> Total Amount: </th>
-                                <th> Status: </th>
-                                <th> Delete: </th>
+                                <th> Mã </th>
+                                <th> Email khách hàng</th>
+                                <th> Số hóa đơn </th>
+                                <th> Tên sản phẩm </th>
+                                <th> Số lương sản phẩm </th>
+                                <th> Kiểu sản phẩm </th>
+                                <th> Thời gian đặt hàng </th>
+                                <th> Tổng tiền </th>
+                                <th> Trạng thái </th>
+                                <th> Xóa </th>
                             </tr><!-- tr finish -->
                         </thead><!-- thead finish -->
                         
@@ -136,7 +136,7 @@
                                      
                                      <a href="index.php?delete_order=<?php echo $order_id; ?>">
                                      
-                                        <i class="fa fa-trash-o"></i> Delete
+                                        <i class="fa fa-trash-o"></i> Xóa
                                     
                                      </a> 
                                      

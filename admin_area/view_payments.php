@@ -13,7 +13,7 @@
         <ol class="breadcrumb"><!-- breadcrumb begin -->
             <li class="active"><!-- active begin -->
                 
-                <i class="fa fa-dashboard"></i> Dashboard / View Payments
+                <i class="fa fa-dashboard"></i> Bảng tin / Xem hóa đơn
                 
             </li><!-- active finish -->
         </ol><!-- breadcrumb finish -->
@@ -26,7 +26,7 @@
             <div class="panel-heading"><!-- panel-heading begin -->
                <h3 class="panel-title"><!-- panel-title begin -->
                
-                   <i class="fa fa-tags"></i>  View Payments
+                   <i class="fa fa-tags"></i>  Xem hóa đơn
                 
                </h3><!-- panel-title finish --> 
             </div><!-- panel-heading finish -->
@@ -37,14 +37,14 @@
                         
                         <thead><!-- thead begin -->
                             <tr><!-- tr begin -->
-                                <th> No: </th>
-                                <th> Invoice No: </th>
-                                <th> Amount Paid: </th>
-                                <th> Method: </th>
-                                <th> Reference No: </th>
-                                <th> Payment Code: </th>
-                                <th> Payment Date: </th>
-                                <th> Delete Payment: </th>
+                                <th> Số </th>
+                                <th> Số hóa đơn </th>
+                                <th> Tổng tiền </th>
+                                <th> Phương thức thanh toán </th>
+                                <th> Sô tham chiếu </th>
+                                <th> Mã hóa đơn </th>
+                                <th> Ngày lập hóa đơn </th>
+                                <th> Xóa hóa đơn </th>
                             </tr><!-- tr finish -->
                         </thead><!-- thead finish -->
                         
@@ -90,7 +90,7 @@
                                      
                                      <a href="index.php?delete_payment=<?php echo $payment_id; ?>">
                                      
-                                        <i class="fa fa-trash-o"></i> Delete
+                                        <i class="fa fa-trash-o"></i> Xóa
                                     
                                      </a> 
                                      

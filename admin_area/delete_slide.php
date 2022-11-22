@@ -20,7 +20,7 @@
         
         if($run_delete){
             
-            echo "<script>alert('One of Your Slide Has Been Deleted')</script>";
+            echo "<script>alert('Bạn đã xóa slide thành công')</script>";
             
             echo "<script>window.open('index.php?view_slides','_self')</script>";
             

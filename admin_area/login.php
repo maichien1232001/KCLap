@@ -9,7 +9,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>M-Dev Store Admin Area</title>
+    <title>Page quản trị KClap </title>
     <link rel="stylesheet" href="css/bootstrap-337.min.css">
     <link rel="stylesheet" href="font-awsome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -19,7 +19,7 @@
    
    <div class="container"><!-- container begin -->
        <form action="" class="form-login" method="post"><!-- form-login begin -->
-           <h2 class="form-login-heading"> Admin Login </h2>
+           <h2 class="form-login-heading"> Đăng nhập tài khoản </h2>
            
            <input type="text" class="form-control" placeholder="Email Address" name="admin_email" required>
            
@@ -27,7 +27,7 @@
            
            <button type="submit" class="btn btn-lg btn-primary btn-block" name="admin_login"><!-- btn btn-lg btn-primary btn-block begin -->
                
-               Login
+               Đăng nhập
                
            </button><!-- btn btn-lg btn-primary btn-block finish -->
            
@@ -56,13 +56,13 @@
             
             $_SESSION['admin_email']=$admin_email;
             
-            echo "<script>alert('Logged in. Welcome Back')</script>";
+            echo "<script>alert('Đăng nhập thành công')</script>";
             
             echo "<script>window.open('index.php?dashboard','_self')</script>";
             
         }else{
             
-            echo "<script>alert('Email or Password is Wrong !')</script>";
+            echo "<script>alert('Sai tên đăng nhập hoặc mật khẩu !')</script>";
             
         }
         

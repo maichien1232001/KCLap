@@ -13,7 +13,7 @@
         <ol class="breadcrumb"><!-- breadcrumb begin -->
             <li>
                 
-                <i class="fa fa-dashboard"></i> Dashboard / View Categories
+                <i class="fa fa-dashboard"></i> Bảng tin / Xem danh mục
                 
             </li>
         </ol><!-- breadcrumb finish -->
@@ -26,7 +26,7 @@
             <div class="panel-heading"><!-- panel-heading begin -->
                 <h3 class="panel-title"><!-- panel-title begin -->
                 
-                    <i class="fa fa-tags fa-fw"></i> View Categories
+                    <i class="fa fa-tags fa-fw"></i> Xem danh mục
                 
                 </h3><!-- panel-title finish -->
             </div><!-- panel-heading finish -->
@@ -37,11 +37,11 @@
                         
                         <thead><!-- thead begin -->
                             <tr><!-- tr begin -->
-                                <th> Category ID </th>
-                                <th> Category Title </th>
-                                <th> Top Category </th>
-                                <th> Edit Category </th>
-                                <th> Delete Category </th>
+                                <th> Mã danh mục </th>
+                                <th> Tên danh mục  </th>
+                                <th> Top danh mục </th>
+                                <th> Sửa danh mục </th>
+                                <th> Xóa danh mục </th>
                             </tr><!-- tr finish -->
                         </thead><!-- thead finish -->
                         
@@ -73,12 +73,12 @@
                                 <td width="300"> <?php echo $cat_top; ?> </td>
                                 <td> 
                                     <a href="index.php?edit_cat= <?php echo $cat_id; ?> ">
-                                        <i class="fa fa-pencil"></i> Edit
+                                        <i class="fa fa-pencil"></i> Sửa
                                     </a>
                                 </td>
                                 <td> 
                                     <a href="index.php?delete_cat= <?php echo $cat_id; ?> ">
-                                        <i class="fa fa-trash"></i> Delete
+                                        <i class="fa fa-trash"></i> Xóa
                                     </a>
                                 </td>
                             </tr><!-- tr finish -->

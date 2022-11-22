@@ -33,7 +33,7 @@ if(isset($_GET['edit_term'])){
             
             <li class="active"><!-- active Begin -->
                 
-                <i class="fa fa-dashboard"></i> Dashboard / Edit Term
+                <i class="fa fa-dashboard"></i>Bảng tin / Sửa chính sách
                 
             </li><!-- active Finish -->
             
@@ -53,7 +53,7 @@ if(isset($_GET['edit_term'])){
                
                <h3 class="panel-title"><!-- panel-title Begin -->
                    
-                   <i class="fa fa-money fa-fw"></i> Edit Term 
+                   <i class="fa fa-money fa-fw"></i> Sửa chính sách
                    
                </h3><!-- panel-title Finish -->
                
@@ -65,7 +65,7 @@ if(isset($_GET['edit_term'])){
                    
                    <div class="form-group"><!-- form-group Begin -->
                        
-                      <label class="col-md-3 control-label"> Term Title </label> 
+                      <label class="col-md-3 control-label"> Tên chính sách </label> 
                       
                       <div class="col-md-6"><!-- col-md-6 Begin -->
                           
@@ -77,7 +77,7 @@ if(isset($_GET['edit_term'])){
                    
                    <div class="form-group"><!-- form-group Begin -->
                        
-                      <label class="col-md-3 control-label"> Term Link </label> 
+                      <label class="col-md-3 control-label"> Link chính sách </label> 
                       
                       <div class="col-md-6"><!-- col-md-6 Begin -->
                           
@@ -89,7 +89,7 @@ if(isset($_GET['edit_term'])){
                    
                    <div class="form-group"><!-- form-group Begin -->
                        
-                      <label class="col-md-3 control-label"> Term Desc </label> 
+                      <label class="col-md-3 control-label"> Mô tả của chính sách </label> 
                       
                       <div class="col-md-6"><!-- col-md-6 Begin -->
                           
@@ -137,7 +137,7 @@ if(isset($_POST['update'])){
 
     if($run_term){
 
-        echo "<script>alert('Your Term Has Been Updated')</script>";
+        echo "<script>alert('Chính sách đã cập nhật thành công')</script>";
         echo "<script>window.open('index.php?view_terms','_self')</script>";
 
     }

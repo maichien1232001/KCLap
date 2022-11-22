@@ -37,7 +37,7 @@
         <ol class="breadcrumb"><!-- breadcrumb begin -->
             <li>
                 
-                <i class="fa fa-dashboard"></i> Dashboard / Edit Category
+                <i class="fa fa-dashboard"></i> Bảng tin / Sửa danh mục
                 
             </li>
         </ol><!-- breadcrumb finish -->
@@ -50,7 +50,7 @@
             <div class="panel-heading"><!-- panel-heading begin -->
                 <h3 class="panel-title"><!-- panel-title begin -->
                 
-                    <i class="fa fa-pencil fa-fw"></i> Edit Category
+                    <i class="fa fa-pencil fa-fw"></i> Sửa danh mục
                 
                 </h3><!-- panel-title finish -->
             </div><!-- panel-heading finish -->
@@ -61,7 +61,7 @@
                     
                         <label for="" class="control-label col-md-3"><!-- control-label col-md-3 begin --> 
                         
-                            Category Title 
+                            Tên danh mục 
                         
                         </label><!-- control-label col-md-3 finish --> 
                         
@@ -77,7 +77,7 @@
                     
                         <label for="" class="control-label col-md-3"><!-- control-label col-md-3 begin --> 
                         
-                            Choose As Top Manufacturer
+                            Chọn để đưa danh mục lên đầu
                         
                         </label><!-- control-label col-md-3 finish --> 
                         
@@ -113,7 +113,7 @@
                     
                         <label for="" class="control-label col-md-3"><!-- control-label col-md-3 begin --> 
                         
-                        Category Image
+                        Hình ảnh danh mục
                         
                         </label><!-- control-label col-md-3 finish --> 
                         
@@ -183,7 +183,7 @@
                 
                 if($run_cat){
                     
-                    echo "<script>alert('Your Category Has Been Updated')</script>";
+                    echo "<script>alert('Danh mục của bạn đã được cập nhật thành công')</script>";
                     
                     echo "<script>window.open('index.php?view_cats','_self')</script>";
                     

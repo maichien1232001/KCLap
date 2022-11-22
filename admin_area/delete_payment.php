@@ -20,7 +20,7 @@
         
         if($run_delete){
             
-            echo "<script>alert('One of Your Payment Has Been Deleted')</script>";
+            echo "<script>alert('Bạn đã xóa hóa đơn thành công')</script>";
             
             echo "<script>window.open('index.php?view_payments','_self')</script>";
             

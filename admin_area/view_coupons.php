@@ -13,7 +13,7 @@
         <ol class="breadcrumb"><!-- breadcrumb begin -->
             <li class="active"><!-- active begin -->
                 
-                <i class="fa fa-dashboard"></i> Dashboard / View Coupons
+                <i class="fa fa-dashboard"></i> Bảng tin / Xem phiếu giảm giá
                 
             </li><!-- active finish -->
         </ol><!-- breadcrumb finish -->
@@ -26,7 +26,7 @@
             <div class="panel-heading"><!-- panel-heading begin -->
                <h3 class="panel-title"><!-- panel-title begin -->
                
-                   <i class="fa fa-tags"></i>  View Coupons
+                   <i class="fa fa-tags"></i>  Xem phiếu giảm giá
                 
                </h3><!-- panel-title finish --> 
             </div><!-- panel-heading finish -->
@@ -37,15 +37,15 @@
                         
                         <thead><!-- thead begin -->
                             <tr><!-- tr begin -->
-                                <th> Coupon ID: </th>
-                                <th> Coupon Name: </th>
-                                <th> Product Name: </th>
-                                <th> Coupon Price: </th>
-                                <th> Code: </th>
-                                <th> Limit: </th>
-                                <th> Used: </th>
-                                <th> Edit: </th>
-                                <th> Delete: </th>
+                                <th> Mã phiếu giảm giá </th>
+                                <th> Tên phiếu giảm giá </th>
+                                <th> Tên sản phẩm </th>
+                                <th> Mức phiếu giảm giá </th>
+                                <th> Mã </th>
+                                <th> Mã </th>
+                                <th> Đã dùng </th>
+                                <th> Sửa </th>
+                                <th> Xóa </th>
                             </tr><!-- tr finish -->
                         </thead><!-- thead finish -->
                         
@@ -91,7 +91,7 @@
                             
                                 <a href="index.php?edit_coupon=<?php echo $coupon_id ?>">
                                 
-                                    <i class="fa fa-pencil"></i> Edit
+                                    <i class="fa fa-pencil"></i> Sửa
                                 
                                 </a>
                             
@@ -100,7 +100,7 @@
                             
                                 <a href="index.php?delete_coupon=<?php echo $coupon_id ?>"> 
                                 
-                                    <i class="fa fa-trash"></i> Delete
+                                    <i class="fa fa-trash"></i> Xóa
                                 
                                 </a>
                             

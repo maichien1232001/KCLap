@@ -20,7 +20,7 @@
         
         if($run_delete){
             
-            echo "<script>alert('One of Your Coupons Has Been Deleted')</script>";
+            echo "<script>alert('Bạn đã xóa thành công mã giảm giá')</script>";
             
             echo "<script>window.open('index.php?view_coupons','_self')</script>";
             
