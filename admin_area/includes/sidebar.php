@@ -255,17 +255,17 @@
             <li><!-- li begin -->
                 <a href="#" data-toggle="collapse" data-target="#users"><!-- a href begin -->
                         
-                        <i class="fa fa-fw fa-users"></i> Người dùng
+                        <i class="fa fa-fw fa-users"></i> Quản trị viên
                         <i class="fa fa-fw fa-caret-down"></i>
                         
                 </a><!-- a href finish -->
                 
                 <ul id="users" class="collapse"><!-- collapse begin -->
                     <li><!-- li begin -->
-                        <a href="index.php?insert_user"> Thêm người dùng </a>
+                        <a href="index.php?insert_user"> Thêm quản trị viên </a>
                     </li><!-- li finish -->
                     <li><!-- li begin -->
-                        <a href="index.php?view_users"> Xem người dùng </a>
+                        <a href="index.php?view_users"> Xem quản trị viên </a>
                     </li><!-- li finish -->
                     <li><!-- li begin -->
                         <a href="index.php?user_profile=<?php echo $admin_id; ?>"> Sửa hồ sơ </a>
