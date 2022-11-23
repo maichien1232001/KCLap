@@ -39,7 +39,7 @@ include("functions/functions.php");
         
     $pro_features = $row_products['product_features'];
         
-    $pro_details = $row_products['product_details'];
+    $pro_video = $row_products['product_video'];
     
     $pro_img1 = $row_products['product_img1'];
     
@@ -99,11 +99,11 @@ include("functions/functions.php");
                    
                    if(!isset($_SESSION['customer_email'])){
                        
-                       echo "Welcome: Guest";
+                       echo "Xin chào: Khách hàng";
                        
                    }else{
                        
-                       echo "Welcome: " . $_SESSION['customer_email'] . "";
+                       echo "Xin chào: " . $_SESSION['customer_email'] . "";
                        
                    }
                    
@@ -134,11 +134,11 @@ include("functions/functions.php");
                            
                            if(!isset($_SESSION['customer_email'])){
                        
-                                echo "<a href='checkout.php'> Login </a>";
+                                echo "<a href='checkout.php'> Đăng nhập </a>";
 
                                }else{
 
-                                echo " <a href='logout.php'> Log Out </a> ";
+                                echo " <a href='logout.php'> Đăng xuất </a> ";
 
                                }
                            
@@ -321,12 +321,12 @@ include("functions/functions.php");
                                
                                <a href="#myCarousel" class="left carousel-control" data-slide="prev"><!-- left carousel-control Begin -->
                                    <span class="glyphicon glyphicon-chevron-left"></span>
-                                   <span class="sr-only">Previous</span>
+                                   <span class="sr-only">Trước</span>
                                </a><!-- left carousel-control Finish -->
                                
                                <a href="#myCarousel" class="right carousel-control" data-slide="next"><!-- right carousel-control Begin -->
                                    <span class="glyphicon glyphicon-chevron-right"></span>
-                                   <span class="sr-only">Next</span>
+                                   <span class="sr-only">Sau</span>
                                </a><!-- right carousel-control Finish -->
                                
                            </div><!-- carousel slide Finish -->
@@ -362,12 +362,12 @@ include("functions/functions.php");
                                    
                                    <div class="col-md-7"><!-- col-md-7 Begin -->
                                        
-                                       <select name="product_type" class="form-control" required oninput="setCustomValidity('')" oninvalid="setCustomValidity('Must pick 1 size for the product')"><!-- form-control Begin -->
+                                       <select name="product_size" class="form-control" required oninput="setCustomValidity('')" oninvalid="setCustomValidity('Must pick 1 size for the product')"><!-- form-control Begin -->
                                           
                                            <option value="" disabled selected>Chọn dòng máy</option>
-                                           <option>Classic</option>
-                                           <option>Pro</option>
-                                           <option>Gaming</option>
+                                           <option>Cổ điển</option>
+                                           <option>Hiện đại</option>
+                                           <option>Chơi game</option>
                                            
                                        </select><!-- form-control Finish -->
                                        
@@ -512,9 +512,9 @@ include("functions/functions.php");
                         Tính năng sản phẩm
                     
                     </a>
-                    <a data-toggle="tab" href="#others" class="btn btn-primary tab">
+                    <a data-toggle="tab" href="#videos" class="btn btn-primary tab">
                     
-                        Thông tin khác
+                        Video minh họa
                     
                     </a>   
                     <!-- Tab Buttons End -->
@@ -545,11 +545,11 @@ include("functions/functions.php");
 
                         </div> <!-- Tab-pane End -->
 
-                        <div class="tab-pane fade in" id="others"> <!-- Tab-pane Start -->
+                        <div class="tab-pane fade in" id="videos"> <!-- Tab-pane Start -->
 
-                            <p class="product_details">
+                            <p class="product_videos">
                             
-                                <?php echo $pro_details; ?>
+                                <?php echo $pro_video; ?>
                             
                             </p>
 

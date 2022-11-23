@@ -26,13 +26,13 @@ $customer_image = $row_customer['customer_image'];
 
 ?>
 
-<h1 align="center"> Edit Your Account </h1>
+<h1 align="center"> Chỉnh sửa tài khoản </h1>
 
 <form action="" method="post" enctype="multipart/form-data"><!-- form Begin -->
     
     <div class="form-group"><!-- form-group Begin -->
         
-        <label> Costumer Name: </label>
+        <label> Tên khách hàng: </label>
         
         <input type="text" name="c_name" class="form-control" value="<?php echo $customer_name; ?>" required>
         
@@ -40,7 +40,7 @@ $customer_image = $row_customer['customer_image'];
     
     <div class="form-group"><!-- form-group Begin -->
         
-        <label> Costumer Email: </label>
+        <label> Email: </label>
         
         <input type="text" name="c_email" class="form-control" value="<?php echo $customer_email; ?>" required>
         
@@ -48,7 +48,7 @@ $customer_image = $row_customer['customer_image'];
     
     <div class="form-group"><!-- form-group Begin -->
         
-        <label> Costumer Country: </label>
+        <label> Quốc gia </label>
         
         <input type="text" name="c_country" class="form-control" value="<?php echo $customer_country; ?>" required>
         
@@ -56,7 +56,7 @@ $customer_image = $row_customer['customer_image'];
     
     <div class="form-group"><!-- form-group Begin -->
         
-        <label> Costumer City: </label>
+        <label> Tỉnh </label>
         
         <input type="text" name="c_city" class="form-control" value="<?php echo $customer_city; ?>" required>
         
@@ -72,7 +72,7 @@ $customer_image = $row_customer['customer_image'];
     
     <div class="form-group"><!-- form-group Begin -->
         
-        <label> Costumer Address: </label>
+        <label> Liên hệ: </label>
         
         <input type="text" name="c_address" class="form-control" value="<?php echo $customer_address; ?>" required>
         
@@ -80,7 +80,7 @@ $customer_image = $row_customer['customer_image'];
     
     <div class="form-group"><!-- form-group Begin -->
         
-        <label> Costumer Image: </label>
+        <label> Ảnh: </label>
         
         <input type="file" name="c_image" class="form-control form-height-custom">
         
@@ -92,7 +92,7 @@ $customer_image = $row_customer['customer_image'];
         
         <button name="update" class="btn btn-primary"><!-- btn btn-primary Begin -->
             
-            <i class="fa fa-user-md"></i> Update Now
+            <i class="fa fa-user-md"></i> Cập nhật bây giờ
             
         </button><!-- btn btn-primary inish -->
         
@@ -130,7 +130,7 @@ if(isset($_POST['update'])){
     
     if($run_customer){
         
-        echo "<script>alert('Your account has been edited, to complete the process, please Relogin')</script>";
+        echo "<script>alert('Tài khoản của bạn đã được chỉnh sửa, để hoàn tất quá trình, vui lòng đăng nhập lại')</script>";
         
         echo "<script>window.open('logout.php','_self')</script>";
         

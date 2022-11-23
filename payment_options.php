@@ -14,11 +14,11 @@
     
     ?>
     
-    <h1 class="text-center">Payment Options For You</h1>  
+    <h1 class="text-center">Tùy chọn thanh toán cho bạn</h1>  
     
      <p class="lead text-center"><!-- lead text-center Begin -->
          
-         <a href="order.php?c_id=<?php echo $customer_id ?>"> Offline Payment </a>
+         <a href="order.php?c_id=<?php echo $customer_id ?>"> Thanh toán ngoại tuyến </a>
          
      </p><!-- lead text-center Finish -->
      
@@ -28,7 +28,7 @@
             
             <a href="#">
                 
-                Paypall Payment
+                Thanh toán Paypal
                 
                 <img class="img-responsive" src="images/paypall_img.png" alt="img-paypall">
                 

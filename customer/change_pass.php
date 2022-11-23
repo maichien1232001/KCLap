@@ -1,11 +1,11 @@
-<h1 align="center"> Change Password </h1>
+<h1 align="center"> Thay đổi mật khẩu </h1>
 
 
 <form action="" method="post"><!-- form Begin -->
     
     <div class="form-group"><!-- form-group Begin -->
         
-        <label> Your Old Password: </label>
+        <label> Nhập mật khẩu cũ: </label>
         
         <input type="text" name="old_pass" class="form-control" required>
         
@@ -13,7 +13,7 @@
     
     <div class="form-group"><!-- form-group Begin -->
         
-        <label> Your New Password: </label>
+        <label> Nhập mật khẩu mới: </label>
         
         <input type="text" name="new_pass" class="form-control" required>
         
@@ -21,7 +21,7 @@
     
     <div class="form-group"><!-- form-group Begin -->
         
-        <label> Confirm Your New Password: </label>
+        <label> Nhập lại mật khẩu mới: </label>
         
         <input type="text" name="new_pass_again" class="form-control" required>
         
@@ -31,7 +31,7 @@
         
         <button type="submit" name="submit" class="btn btn-primary"><!-- btn btn-primary Begin -->
             
-            <i class="fa fa-user-md"></i> Update Now
+            <i class="fa fa-user-md"></i> Cập nhật lại bây giờ
             
         </button><!-- btn btn-primary inish -->
         
@@ -60,7 +60,7 @@ if(isset($_POST['submit'])){
     
     if($check_c_old_pass==0){
         
-        echo "<script>alert('Sorry, your current password did not valid. Please try again')</script>";
+        echo "<script>alert('Mật khẩu hiện tại không hợp lệ. Vui lòng nhập lại mật khẩu')</script>";
         
         exit();
         
@@ -68,7 +68,7 @@ if(isset($_POST['submit'])){
     
     if($c_new_pass!=$c_new_pass_again){
         
-        echo "<script>alert('Sorry, your new password did not match')</script>";
+        echo "<script>alert('Mật khẩu của bạn không khớp')</script>";
         
         exit();
         
@@ -80,7 +80,7 @@ if(isset($_POST['submit'])){
     
     if($run_c_pass){
         
-        echo "<script>alert('Your password has been updated')</script>";
+        echo "<script>alert('Mật khẩu của bạn đã được cập nhật')</script>";
         
         echo "<script>window.open('my_account.php?my_orders','_self')</script>";
         

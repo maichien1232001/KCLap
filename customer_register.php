@@ -11,10 +11,10 @@
                
                <ul class="breadcrumb"><!-- breadcrumb Begin -->
                    <li>
-                       <a href="index.php">Home</a>
+                       <a href="index.php">Trang chủ</a>
                    </li>
                    <li>
-                       Register
+                       Tài khoản
                    </li>
                </ul><!-- breadcrumb Finish -->
                
@@ -28,7 +28,7 @@
                        
                        <center><!-- center Begin -->
                            
-                           <h2> Register a new account </h2>
+                           <h2> Đăng ký tài khoản mới </h2>
                            
                        </center><!-- center Finish -->
                        
@@ -36,7 +36,7 @@
                            
                            <div class="form-group"><!-- form-group Begin -->
                                
-                               <label>Your Name</label>
+                               <label>Họ và tên</label>
                                
                                <input type="text" class="form-control" name="c_name" required>
                                
@@ -44,7 +44,7 @@
                            
                            <div class="form-group"><!-- form-group Begin -->
                                
-                               <label>Your Email</label>
+                               <label>Email</label>
                                
                                <input type="text" class="form-control" name="c_email" required>
                                
@@ -52,7 +52,7 @@
                            
                            <div class="form-group"><!-- form-group Begin -->
                                
-                               <label>Your Password</label>
+                               <label>Mật khẩu</label>
                                
                                <input type="password" class="form-control" name="c_pass" required>
                                
@@ -60,7 +60,7 @@
                            
                            <div class="form-group"><!-- form-group Begin -->
                                
-                               <label>Your Country</label>
+                               <label>Tỉnh</label>
                                
                                <input type="text" class="form-control" name="c_country" required>
                                
@@ -68,7 +68,7 @@
                            
                            <div class="form-group"><!-- form-group Begin -->
                                
-                               <label>Your City</label>
+                               <label>Thành phố</label>
                                
                                <input type="text" class="form-control" name="c_city" required>
                                
@@ -76,7 +76,7 @@
                            
                            <div class="form-group"><!-- form-group Begin -->
                                
-                               <label>Your Contact</label>
+                               <label>Liên hệ</label>
                                
                                <input type="text" class="form-control" name="c_contact" required>
                                
@@ -84,7 +84,7 @@
                            
                            <div class="form-group"><!-- form-group Begin -->
                                
-                               <label>Your Address</label>
+                               <label>Địa chỉ</label>
                                
                                <input type="text" class="form-control" name="c_address" required>
                                
@@ -92,7 +92,7 @@
                            
                            <div class="form-group"><!-- form-group Begin -->
                                
-                               <label>Your Profile Picture</label>
+                               <label>Ảnh</label>
                                
                                <input type="file" class="form-control form-height-custom" name="c_image" required>
                                
@@ -102,7 +102,7 @@
                                
                                <button type="submit" name="register" class="btn btn-primary">
                                
-                               <i class="fa fa-user-md"></i> Register
+                               <i class="fa fa-user-md"></i> Đăng ký
                                
                                </button>
                                
@@ -175,7 +175,7 @@ if(isset($_POST['register'])){
         
         $_SESSION['customer_email']=$c_email;
         
-        echo "<script>alert('You have been Registered Sucessfully')</script>";
+        echo "<script>alert('Bạn đã đăng ký thành công')</script>";
         
         echo "<script>window.open('checkout.php','_self')</script>";
         
@@ -185,7 +185,7 @@ if(isset($_POST['register'])){
         
         $_SESSION['customer_email']=$c_email;
         
-        echo "<script>alert('You have been Registered Sucessfully')</script>";
+        echo "<script>alert('Bạn đã đăng ký thành công')</script>";
         
         echo "<script>window.open('index.php','_self')</script>";
         

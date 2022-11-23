@@ -23,7 +23,7 @@ if(isset($_GET['order_id'])){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>M-Dev Store</title>
+    <title>KCLaptop</title>
     <link rel="stylesheet" href="styles/bootstrap-337.min.css">
     <link rel="stylesheet" href="font-awsome/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles/style.css">
@@ -42,11 +42,11 @@ if(isset($_GET['order_id'])){
                    
                    if(!isset($_SESSION['customer_email'])){
                        
-                       echo "Welcome: Guest";
+                       echo "Xin chào: Khách hàng";
                        
                    }else{
                        
-                       echo "Welcome: " . $_SESSION['customer_email'] . "";
+                       echo "Xin chào: " . $_SESSION['customer_email'] . "";
                        
                    }
                    
@@ -61,15 +61,15 @@ if(isset($_GET['order_id'])){
                
                <ul class="menu"><!-- cmenu Begin -->
                    
-                   <li>
-                       <a href="../customer_register.php">Register</a>
-                   </li>
-                   <li>
-                       <a href="my_account.php">My Account</a>
-                   </li>
-                   <li>
-                       <a href="../cart.php">Go To Cart</a>
-                   </li>
+                <li>
+                        <a href="customer_register.php">Đăng ký</a>
+                    </li>
+                    <li>
+                        <a href="checkout.php">Tài khoản</a>
+                    </li>
+                    <li>
+                        <a href="cart.php">Giỏ hàng</a>
+                    </li>
                    <li>
                        <a href="../checkout.php">
                        
@@ -77,11 +77,11 @@ if(isset($_GET['order_id'])){
                            
                            if(!isset($_SESSION['customer_email'])){
                        
-                                echo "<a href='checkout.php'> Login </a>";
+                                echo "<a href='checkout.php'> Đăng nhập </a>";
 
                                }else{
 
-                                echo " <a href='logout.php'> Log Out </a> ";
+                                echo " <a href='logout.php'> Đăng xuất </a> ";
 
                                }
                            
@@ -106,8 +106,8 @@ if(isset($_GET['order_id'])){
                
                <a href="../index.php" class="navbar-brand home"><!-- navbar-brand home Begin -->
                    
-                   <img src="images/ecom-store-logo.png" alt="M-dev-Store Logo" class="hidden-xs">
-                   <img src="images/ecom-store-logo-mobile.png" alt="M-dev-Store Logo Mobile" class="visible-xs">
+                   <img src="images/ecom-store-logo.png" alt="KCLaptop Logo" class="hidden-xs">
+                   <img src="images/ecom-store-logo-mobile.png" alt="KCLaptop Logo Mobile" class="visible-xs">
                    
                </a><!-- navbar-brand home Finish -->
                
@@ -135,20 +135,20 @@ if(isset($_GET['order_id'])){
                    
                    <ul class="nav navbar-nav left"><!-- nav navbar-nav left Begin -->
                        
-                       <li>
-                           <a href="../index.php">Home</a>
+                   <li>
+                           <a href="../index.php">Trang chủ</a>
                        </li>
                        <li>
-                           <a href="../shop.php">Shop</a>
+                           <a href="../shop.php">Sản phẩm</a>
                        </li>
                        <li class="active">
-                           <a href="my_account.php">My Account</a>
+                           <a href="my_account.php">Tài khoản</a>
                        </li>
                        <li>
-                           <a href="../cart.php">Shopping Cart</a>
+                           <a href="../cart.php">Giỏ hàng</a>
                        </li>
                        <li>
-                           <a href="../contact.php">Contact Us</a>
+                           <a href="../contact.php">Liên hệ</a>
                        </li>
                        
                    </ul><!-- nav navbar-nav left Finish -->
@@ -159,7 +159,7 @@ if(isset($_GET['order_id'])){
                    
                    <i class="fa fa-shopping-cart"></i>
                    
-                   <span><?php items(); ?> Items In Your Cart</span>
+                   <span><?php items(); ?> sản phẩm trong giỏ hàng</span>
                    
                </a><!-- btn navbar-btn btn-primary Finish -->
                
@@ -181,7 +181,7 @@ if(isset($_GET['order_id'])){
                        
                        <div class="input-group"><!-- input-group Begin -->
                            
-                           <input type="text" class="form-control" placeholder="Search" name="user_query" required>
+                           <input type="text" class="form-control" placeholder="Tìm kiếm" name="user_query" required>
                            
                            <span class="input-group-btn"><!-- input-group-btn Begin -->
                            
@@ -209,12 +209,12 @@ if(isset($_GET['order_id'])){
        <div class="container"><!-- container Begin -->
            <div class="col-md-12"><!-- col-md-12 Begin -->
                
-               <ul class="breadcrumb"><!-- breadcrumb Begin -->
+           <ul class="breadcrumb"><!-- breadcrumb Begin -->
                    <li>
-                       <a href="index.php">Home</a>
+                       <a href="index.php">Trang chủ</a>
                    </li>
                    <li>
-                       My Account
+                       Tài khoản
                    </li>
                </ul><!-- breadcrumb Finish -->
                
@@ -234,13 +234,13 @@ if(isset($_GET['order_id'])){
                
                <div class="box"><!-- box Begin -->
                    
-                   <h1 align="center"> Please confirm your payment</h1>
+                   <h1 align="center"> Vui lòng xác nhận thanh toán của bạn </h1>
                    
                    <form action="confirm.php?update_id=<?php echo $order_id;  ?>" method="post" enctype="multipart/form-data"><!-- form Begin -->
                        
                        <div class="form-group"><!-- form-group Begin -->
                            
-                         <label> Invoice No: </label>
+                         <label> Hóa đơn không có: </label>
                           
                           <input type="text" class="form-control" name="invoice_no" required>
                            
@@ -248,7 +248,7 @@ if(isset($_GET['order_id'])){
                        
                        <div class="form-group"><!-- form-group Begin -->
                            
-                         <label> Amount Sent: </label>
+                         <label> Số tiền đã gửi: </label>
                           
                           <input type="text" class="form-control" name="amount_sent" required>
                            
@@ -256,15 +256,15 @@ if(isset($_GET['order_id'])){
                        
                        <div class="form-group"><!-- form-group Begin -->
                            
-                         <label> Select Payment Mode: </label>
+                         <label> Chọn chế độ thanh toán: </label>
                           
                           <select name="payment_mode" class="form-control"><!-- form-control Begin -->
                               
-                              <option> Select Payment Mode </option>
-                              <option> Back Code </option>
-                              <option> Paypall </option>
-                              <option> Payoneer </option>
-                              <option> Western Union </option>
+                            <option> Chọn chế độ thanh toán </option>
+                            <option> Quét mã QR </option>
+                            <option> Thanh toán qua Paypal </option>
+                            <option> Trả tiền trực tiếp </option>
+                            <option> Thanh toán qua Western Union </option>
                               
                           </select><!-- form-control Finish -->
                            
@@ -272,7 +272,7 @@ if(isset($_GET['order_id'])){
                        
                        <div class="form-group"><!-- form-group Begin -->
                            
-                         <label> Transaction / Reference ID: </label>
+                         <label> Giao dịch / ID: </label>
                           
                           <input type="text" class="form-control" name="ref_no" required>
                            
@@ -280,7 +280,7 @@ if(isset($_GET['order_id'])){
                        
                        <div class="form-group"><!-- form-group Begin -->
                            
-                         <label> Paypall / Payoneer / Western Union Code: </label>
+                         <label> Thanh toán qua Paypal / Trả tiền trực tiếp / Mã Western Union: </label>
                           
                           <input type="text" class="form-control" name="code" required>
                            
@@ -288,7 +288,7 @@ if(isset($_GET['order_id'])){
                        
                        <div class="form-group"><!-- form-group Begin -->
                            
-                         <label> Payment Date: </label>
+                         <label> Ngày thanh toán: </label>
                           
                           <input type="text" class="form-control" name="date" required>
                            
@@ -298,7 +298,7 @@ if(isset($_GET['order_id'])){
                            
                            <button class="btn btn-primary btn-lg" name="confirm_payment"><!-- tn btn-primary btn-lg Begin -->
                                
-                               <i class="fa fa-user-md"></i> Confirm Payment
+                               <i class="fa fa-user-md"></i> Xác nhận thanh toán
                                
                            </button><!-- tn btn-primary btn-lg Finish -->
                            

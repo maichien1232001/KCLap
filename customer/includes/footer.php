@@ -3,18 +3,18 @@
         <div class="row"><!-- row Begin -->
             <div class="col-sm-6 col-md-3"><!-- col-sm-6 col-md-3 Begin -->
                
-               <h4>Pages</h4>
+               <h4>Trang chủ</h4>
                 
                 <ul><!-- ul Begin -->
-                    <li><a href="../cart.php">Shopping Cart</a></li>
-                    <li><a href="../contact.php">Contact Us</a></li>
-                    <li><a href="../shop.php">Shop</a></li>
-                    <li><a href="my_account.php">My Account</a></li>
+                    <li><a href="../cart.php">Giỏ hàng</a></li>
+                    <li><a href="../contact.php">Liên hệ</a></li>
+                    <li><a href="../shop.php">Sản phẩm</a></li>
+                    <li><a href="my_account.php">Tài khoản</a></li>
                 </ul><!-- ul Finish -->
                 
                 <hr>
                 
-                <h4>User Section</h4>
+                <h4>Phân quyền người dùng</h4>
                 
                 <ul><!-- ul Begin -->
                            
@@ -22,11 +22,11 @@
                            
                            if(!isset($_SESSION['customer_email'])){
                                
-                               echo"<a href='../checkout.php'>Login</a>";
+                               echo"<a href='../checkout.php'>Đăng nhập</a>";
                                
                            }else{
                                
-                              echo"<a href='my_account.php?my_orders'>My Account</a>"; 
+                              echo"<a href='my_account.php?my_orders'>Tài khoản</a>"; 
                                
                            }
                            
@@ -38,18 +38,18 @@
                            
                            if(!isset($_SESSION['customer_email'])){
                                
-                               echo"<a href='../checkout.php'>Login</a>";
+                               echo"<a href='../checkout.php'>Đăng nhập</a>";
                                
                            }else{
                                
-                              echo"<a href='my_account.php?edit_account'>Edit Account</a>"; 
+                              echo"<a href='my_account.php?edit_account'>Chỉnh sửa tài khoản</a>"; 
                                
                            }
                            
                            ?>
                     
                     </li>
-                    <li><a href="../terms.php">Terms & Conditions</a></li>
+                    <li><a href="../terms.php">Điều khoản và điều kiện</a></li>
                 </ul><!-- ul Finish -->
                 
                 <hr class="hidden-md hidden-lg hidden-sm">
@@ -58,7 +58,7 @@
             
             <div class="com-sm-6 col-md-3"><!-- col-sm-6 col-md-3 Begin -->
                 
-                <h4>Top Products Categories</h4>
+                <h4>Danh mục sản phẩm hàng đầu</h4>
                 
                 <ul><!-- ul Begin -->
                 
@@ -104,16 +104,16 @@
                 
                 <p><!-- p Start -->
                     
-                    <strong>M-Dev Media inc.</strong>
-                    <br/>Cibubur
-                    <br/>Ciracas
+                <strong>KCLap.</strong>
+                    <br/>Lê Thế Kỷ
+                    <br/>Mai Xuân Chiến
                     <br/>0818-0683-3157
                     <br/>mugianto4th@gmail.com
-                    <br/><strong>MrGhie</strong>
+                    <br/><strong>Mr.KC</strong>
                     
                 </p><!-- p Finish -->
                 
-                <a href="../contact.php">Check Our Contact Page</a>
+                <a href="../contact.php">Kiểm tra trang liên hệ của chúng tôi</a>
                 
                 <hr class="hidden-md hidden-lg">
                 
@@ -121,10 +121,10 @@
             
             <div class="col-sm-6 col-md-3">
                 
-                <h4>Get The News</h4>
+                <h4>Tin tức</h4>
                 
                 <p class="text-muted">
-                    Dont miss our latest update products.
+                    Đừng bỏ lỡ các sản phẩm cập nhật mới nhất của chúng tôi.
                 </p>
                 
                 <form action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('https://feedburner.google.com/fb/a/mailverify?uri=M-devMedia', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true" method="post"><!-- form begin -->
@@ -145,7 +145,7 @@
                 
                 <hr>
                 
-                <h4>Keep In Touch</h4>
+                <h4>Liên hệ</h4>
                 
                 <p class="social">
                     <a href="../#" class="fa fa-facebook"></a>
@@ -165,12 +165,12 @@
     <div class="container"><!-- container Begin -->
         <div class="col-md-6"><!-- col-md-6 Begin -->
             
-            <p class="pull-left">&copy; 2018 M-Dev Store All Rights Reserve</p>
+            <p class="pull-left">&copy; 2022 KCLap Store All Rights Reserve</p>
             
         </div><!-- col-md-6 Finish -->
         <div class="col-md-6"><!-- col-md-6 Begin -->
             
-            <p class="pull-right">Theme by: <a href="#">MrGhie</a></p>
+            <p class="pull-right">Theme by: <a href="#"><Mr class="KC"></Mr></a></p>
             
         </div><!-- col-md-6 Finish -->
     </div><!-- container Finish -->

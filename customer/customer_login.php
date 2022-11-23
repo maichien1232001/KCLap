@@ -4,9 +4,9 @@
       
       <center><!-- center Begin -->
           
-          <h1> Login </h1>
+          <h1> Đăng nhập </h1>
           
-          <p class="lead"> Already have our account..? </p>
+          <p class="lead"> Bạn đã có tài khoản? </p>
           
           <p class="text-muted"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, maxime. Laudantium omnis, ullam, fuga officia provident error corporis consectetur aliquid corrupti recusandae minus ipsam quasi. Perspiciatis nemo, nostrum magni odit! </p>
           
@@ -18,7 +18,7 @@
       
       <div class="form-group"><!-- form-group Begin -->
           
-          <label> Email </label>
+          <label> Tài khoản </label>
           
           <input name="c_email" type="text" class="form-control" required>
           
@@ -26,7 +26,7 @@
       
        <div class="form-group"><!-- form-group Begin -->
           
-          <label> Password </label>
+          <label> Mật khẩu </label>
           
           <input name="c_pass" type="password" class="form-control" required>
           
@@ -36,7 +36,7 @@
           
           <button name="login" value="Login" class="btn btn-primary">
               
-              <i class="fa fa-sign-in"></i> Login
+              <i class="fa fa-sign-in"></i> Đăng nhập
               
           </button>
           
@@ -48,7 +48,7 @@
       
      <a href="customer_register.php">
          
-         <h3> Dont have account..? Register here </h3>
+         <h3> Bạn chưa có tài khoản? Đăng ký tài khoản </h3>
          
      </a> 
       
@@ -81,7 +81,7 @@ if(isset($_POST['login'])){
     
     if($check_customer==0){
         
-        echo "<script>alert('Your email or password is wrong')</script>";
+        echo "<script>alert('Tài khoản hoặc mật khẩu không chính xác')</script>";
         
         exit();
         
@@ -91,7 +91,7 @@ if(isset($_POST['login'])){
         
         $_SESSION['customer_email']=$customer_email;
         
-       echo "<script>alert('You are Logged in')</script>"; 
+       echo "<script>alert('Bạn đã đăng nhập thành công')</script>"; 
         
        echo "<script>window.open('customer/my_account.php?my_orders','_self')</script>";
         
@@ -99,7 +99,7 @@ if(isset($_POST['login'])){
         
         $_SESSION['customer_email']=$customer_email;
         
-       echo "<script>alert('You are Logged in')</script>"; 
+       echo "<script>alert('Bạn đã đăng nhập thành công')</script>"; 
         
        echo "<script>window.open('checkout.php','_self')</script>";
         

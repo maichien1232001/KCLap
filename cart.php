@@ -1,6 +1,6 @@
 <?php 
 
-    $active='Cart';
+    $active='Giỏ hàng';
     include("includes/header.php");
 
 ?>
@@ -11,10 +11,10 @@
                
                <ul class="breadcrumb"><!-- breadcrumb Begin -->
                    <li>
-                       <a href="index.php">Home</a>
+                       <a href="index.php">Trang chủ</a>
                    </li>
                    <li>
-                       Cart
+                       Giỏ hàng
                    </li>
                </ul><!-- breadcrumb Finish -->
                
@@ -26,7 +26,7 @@
                    
                    <form action="cart.php" method="post" enctype="multipart/form-data"><!-- form Begin -->
                        
-                       <h1>Shopping Cart</h1>
+                       <h1>Giỏ hàng</h1>
                        
                        <?php 
                        
@@ -40,7 +40,7 @@
                        
                        ?>
                        
-                       <p class="text-muted">You currently have <?php echo $count; ?> item(s) in your cart</p>
+                       <p class="text-muted">Bạn hiện có <?php echo $count; ?> sản phẩm trong giỏ hàng</p>
                        
                        <div class="table-responsive"><!-- table-responsive Begin -->
                            
@@ -50,12 +50,12 @@
                                    
                                    <tr><!-- tr Begin -->
                                        
-                                       <th colspan="2">Product</th>
-                                       <th>Quantity</th>
-                                       <th>Unit Price</th>
-                                       <th>Type</th> 
-                                       <th colspan="1">Delete</th>
-                                       <th colspan="2">Sub-Total</th>
+                                       <th colspan="2">Sản phẩm</th>
+                                       <th>Số lượng</th>
+                                       <th>Đơn giá</th>
+                                       <th>Kích cỡ</th>
+                                       <th colspan="1">Xóa</th>
+                                       <th colspan="2">Thành tiền</th>
                                        
                                    </tr><!-- tr Finish -->
                                    
@@ -153,7 +153,7 @@
                                    
                                    <tr><!-- tr Begin -->
                                        
-                                       <th colspan="5">Total</th>
+                                       <th colspan="5">Thành tiền</th>
                                        <th colspan="2">$<?php echo $total; ?></th>
                                        
                                    </tr><!-- tr Finish -->
@@ -165,9 +165,9 @@
                            <div class="form-inline pull-right"><!-- form-inline Begin -->
                                <div class="form-group"><!-- form-group Begin -->
 
-                                    <label> Coupon Code: </label>
+                                    <label> Mã giảm giá: </label>
                                     <input type="text" name="code" class="form-control">
-                                    <input type="submit" class="btn btn-primary" value="Use Coupon" name="apply_coupon">
+                                    <input type="submit" class="btn btn-primary" value="Sử dụng mã" name="apply_coupon">
                                
                                </div><!-- form-group Finish -->
                            </div><!-- form-inline Finish -->
@@ -180,7 +180,7 @@
                                
                                <a href="index.php" class="btn btn-default"><!-- btn btn-default Begin -->
                                    
-                                   <i class="fa fa-chevron-left"></i> Continue Shopping
+                                   <i class="fa fa-chevron-left"></i> Tiếp tục mua sắm
                                    
                                </a><!-- btn btn-default Finish -->
                                
@@ -190,13 +190,13 @@
                                
                                <button type="submit" name="update" value="Update Cart" class="btn btn-default"><!-- btn btn-default Begin -->
                                    
-                                   <i class="fa fa-refresh"></i> Update Cart
+                                   <i class="fa fa-refresh"></i> Cập nhật giỏ hàng
                                    
                                </button><!-- btn btn-default Finish -->
                                
                                <a href="checkout.php" class="btn btn-primary">
                                    
-                                   Proceed Checkout <i class="fa fa-chevron-right"></i>
+                                   Tiến hành thanh toán <i class="fa fa-chevron-right"></i>
                                    
                                </a>
                                
@@ -304,7 +304,7 @@
                <div id="row same-heigh-row"><!-- #row same-heigh-row Begin -->
                    <div class="col-md-3 col-sm-6"><!-- col-md-3 col-sm-6 Begin -->
                        <div class="box same-height headline"><!-- box same-height headline Begin -->
-                           <h3 class="text-center">Products You Maybe Like</h3>
+                           <h3 class="text-center">Sản phẩm có thể bạn thích</h3>
                        </div><!-- box same-height headline Finish -->
                    </div><!-- col-md-3 col-sm-6 Finish -->
                    
@@ -374,6 +374,8 @@
                             </a>
                             
                             <div class='text'>
+            
+                            
                             
                                 <h3>
                         
@@ -395,13 +397,13 @@
                                 
                                     <a class='btn btn-default' href='$pro_url'>
             
-                                        View Details
+                                        Xem chi tiết
             
                                     </a>
                                 
                                     <a class='btn btn-primary' href='$pro_url'>
             
-                                        <i class='fa fa-shopping-cart'></i> Add to Cart
+                                        <i class='fa fa-shopping-cart'></i> Thêm vào giỏ hàng
             
                                     </a>
                                 
@@ -431,13 +433,13 @@
                    
                    <div class="box-header"><!-- box-header Begin -->
                        
-                       <h3>Order Summary</h3>
+                       <h3>Tóm tắt đơn hàng</h3>
                        
                    </div><!-- box-header Finish -->
                    
                    <p class="text-muted"><!-- text-muted Begin -->
                        
-                       Shipping and additional costs are calculated based on value you have entered
+                        Chi phí vận chuyển và chi phí bổ sung được tính dựa trên giá trị bạn đã nhập
                        
                    </p><!-- text-muted Finish -->
                    
@@ -456,21 +458,21 @@
                                
                                <tr><!-- tr Begin -->
                                    
-                                   <td> Shipping and Handling </td>
+                                   <td> Vận chuyển và xử lý </td>
                                    <td> $0 </td>
                                    
                                </tr><!-- tr Finish -->
                                
                                <tr><!-- tr Begin -->
                                    
-                                   <td> Tax </td>
+                                   <td> Thuế </td>
                                    <th> $0 </th>
                                    
                                </tr><!-- tr Finish -->
                                
                                <tr class="total"><!-- tr Begin -->
                                    
-                                   <td> Total </td>
+                                   <td> Thành tiền </td>
                                    <th> $<?php echo $total; ?> </th>
                                    
                                </tr><!-- tr Finish -->
@@ -527,7 +529,5 @@
        });
     
     </script>
-    
-    
 </body>
 </html>
