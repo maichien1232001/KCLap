@@ -11,10 +11,10 @@
                
                <ul class="breadcrumb"><!-- breadcrumb Begin -->
                    <li>
-                       <a href="index.php">Home</a>
+                       <a href="index.php">Trang chủ</a>
                    </li>
                    <li>
-                       Terms & Conditions | Refund
+                   Điều khoản & Điều kiện | Đền bù
                    </li>
                </ul><!-- breadcrumb Finish -->
                

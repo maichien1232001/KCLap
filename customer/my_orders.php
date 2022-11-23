@@ -1,12 +1,12 @@
 <center><!--  center Begin  -->
     
-    <h1> My Orders </h1>
+<h1> Đơn đặt hàng </h1>
     
-    <p class="lead"> Your orders on one place</p>
+    <p class="lead"> Đơn đặt hàng của bạn ở một nơi</p>
     
     <p class="text-muted">
         
-        If you have any questions, feel free to <a href="../contact.php">Contact Us</a>. Our Customer Service work <strong>24/7</strong>
+    Nếu bạn có bất kỳ câu hỏi nào, vui lòng <a href="../contact.php">Liên hệ</a>. Dịch vụ khách hàng của chúng tôi <strong>24/7</strong>
         
     </p>
     
@@ -24,14 +24,14 @@
             
             <tr><!--  tr Begin  -->
                 
-                <th> ON: </th>
-                <th> Due Amount: </th>
-                <th> Invoice No: </th>
-                <th> Qty: </th>
-                <th> type: </th>
-                <th> Order Date:</th>
-                <th> Paid / Unpaid: </th>
-                <th> Status: </th>
+                <th> Số hóa đơn: </th>
+                <th> Số tiền phải trả: </th>
+                <th> Hóa đơn không có: </th>
+                <th> Số lượng: </th>
+                <th> Kiểu: </th>
+                <th> Ngày đặt hàng:</th>
+                <th> Đã thanh toán / Chưa thanh toán: </th>
+                <th> Trạng thái: </th>
                 
             </tr><!--  tr Finish  -->
             

@@ -52,7 +52,7 @@
                 
                 <a href="my_account.php?my_orders">
                     
-                    <i class="fa fa-list"></i> My Orders
+                    <i class="fa fa-list"></i> Đơn đặt hàng
                     
                 </a>
                 
@@ -62,7 +62,7 @@
                 
                 <a href="my_account.php?pay_offline">
                     
-                    <i class="fa fa-bolt"></i> Pay Offline
+                    <i class="fa fa-bolt"></i> Thanh toán ngoại tuyến
                     
                 </a>
                 
@@ -72,7 +72,7 @@
                 
                 <a href="my_account.php?edit_account">
                     
-                    <i class="fa fa-pencil"></i> Edit Account
+                    <i class="fa fa-pencil"></i> Chỉnh sửa tài khoản
                     
                 </a>
                 
@@ -82,7 +82,7 @@
                 
                 <a href="my_account.php?change_pass">
                     
-                    <i class="fa fa-user"></i> Change Password
+                    <i class="fa fa-user"></i> Đổi mật khẩu
                     
                 </a>
                 
@@ -92,7 +92,7 @@
                 
                 <a href="my_account.php?delete_account">
                     
-                    <i class="fa fa-trash-o"></i> Delete Account
+                    <i class="fa fa-trash-o"></i> Xóa tài khoản
                     
                 </a>
                 
@@ -102,7 +102,7 @@
                 
                 <a href="logout.php">
                     
-                    <i class="fa fa-sign-out"></i> Log Out
+                    <i class="fa fa-sign-out"></i> Đăng xuất
                     
                 </a>
                 

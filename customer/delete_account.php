@@ -1,12 +1,12 @@
 <center><!-- center Begin -->
     
-    <h1> Do You Realy Want To Delete Your Account ? </h1>
+    <h1> Bạn muốn xóa tài khoản này ? </h1>
     
     <form action="" method="post"><!-- form Begin -->
         
-       <input type="submit" name="Yes" value="Yes, I Want To Delete" class="btn btn-danger"> 
+        <input type="submit" name="Yes" value="Có, Tôi muốn xóa" class="btn btn-danger"> 
         
-       <input type="submit" name="No" value="No, I Dont Want To Delete" class="btn btn-primary"> 
+        <input type="submit" name="No" value="Không, Tôi không muốn xóa" class="btn btn-primary"> 
         
     </form><!-- form Finish -->
     
@@ -27,7 +27,7 @@ if(isset($_POST['Yes'])){
         
         session_destroy();
         
-        echo "<script>alert('Successfully delete your account, feel sorry about this. Good Bye')</script>";
+        echo "<script>alert('Xóa thành công tài khoản của bạn, cảm thấy tiếc về điều này. Tạm biệt')</script>";
         
         echo "<script>window.open('../index.php','_self')</script>";
         

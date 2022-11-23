@@ -10,11 +10,11 @@
            <div class="col-md-12"><!-- col-md-12 Begin -->
                
                <ul class="breadcrumb"><!-- breadcrumb Begin -->
-                   <li> 
-                       <a href="index.php">Home</a>
+                   <li>
+                       <a href="index.php">Trang chủ</a>
                    </li>
                    <li>
-                       Contact Us
+                       Liên hệ
                    </li>
                </ul><!-- breadcrumb Finish -->
                
@@ -24,15 +24,15 @@
                
                <div class="box"><!-- box Begin -->
                    
-                   <div class="box-header"><!-- box-header Begin -->
+               <div class="box-header"><!-- box-header Begin -->
                        
                        <center><!-- center Begin -->
                            
-                           <h2> Feel free to Contact Us</h2>
+                           <h2> Cứ liên lạc nếu cần</h2>
                            
                            <p class="text-muted"><!-- text-muted Begin -->
                                
-                               If you have any questions, feel free to contact us. Our Customer Service work <strong>24/7</strong>
+                           Nếu bạn có bất kỳ câu hỏi nào, vui lòng liên hệ với chúng tôi. Dịch vụ khách hàng của chúng tôi <strong>24/7</strong>
                                
                            </p><!-- text-muted Finish -->
                            
@@ -42,7 +42,7 @@
                            
                            <div class="form-group"><!-- form-group Begin -->
                                
-                               <label>Name</label>
+                               <label>Tên</label>
                                
                                <input type="text" class="form-control" name="name" required>
                                
@@ -66,7 +66,7 @@
                            
                            <div class="form-group"><!-- form-group Begin -->
                                
-                               <label>Message</label>
+                               <label>Thông báo</label>
                                
                                <textarea name="message" class="form-control"></textarea>
                                
@@ -76,7 +76,7 @@
                                
                                <button type="submit" name="submit" class="btn btn-primary">
                                
-                               <i class="fa fa-user-md"></i> Send Message
+                               <i class="fa fa-user-md"></i> Gửi tin nhắn
                                
                                </button>
                                
@@ -106,15 +106,15 @@
                            
                            $email = $_POST['email'];
                            
-                           $subject = "Welcome to my website";
+                           $subject = "Chào mừng đến trang web của tôi";
                            
-                           $msg = "Thanks for sending us message. ASAP we will reply your message";
+                           $msg = "Cảm ơn đã gửi tin nhắn cho chúng tôi. Chúng tôi sẽ trả lời tin nhắn của bạn sớm nhất có thể";
                            
                            $from = "mugianto4th@gmail.com";
                            
                            mail($email,$subject,$msg,$from);
                            
-                           echo "<h2 align='center'> Your message has sent sucessfully </h2>";
+                           echo "<h2 align='center'> Tin nhắn của bạn đã được gửi thành công </h2>";
                            
                        }
                        

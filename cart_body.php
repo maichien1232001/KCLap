@@ -23,18 +23,18 @@ include("functions/functions.php");
                    
                    if(!isset($_SESSION['customer_email'])){
                        
-                       echo "Welcome: Guest";
-                       
-                   }else{
-                       
-                       echo "Welcome: " . $_SESSION['customer_email'] . "";
-                       
-                   }
+                    echo "Xin chào: Khách hàng";
+                    
+                }else{
+                    
+                    echo "Xin chào: " . $_SESSION['customer_email'] . "";
+                    
+                }
                    
                    ?>
                    
                </a>
-               <a href="checkout.php"><?php items(); ?> Items In Your Cart | Total Price: <?php total_price(); ?> </a>
+               <a href="checkout.php"><?php items(); ?> Sản phẩm trong giỏ hàng | Thành tiền: <?php total_price(); ?> </a>
                
            </div><!-- col-md-6 offer Finish -->
            
@@ -43,13 +43,13 @@ include("functions/functions.php");
                <ul class="menu"><!-- cmenu Begin -->
                    
                    <li>
-                       <a href="customer_register.php">Register</a>
+                       <a href="customer_register.php">Đăng ký</a>
                    </li>
                    <li>
-                       <a href="checkout.php">My Account</a>
+                       <a href="checkout.php">Tài khoản</a>
                    </li>
                    <li>
-                       <a href="cart.php">Go To Cart</a>
+                       <a href="cart.php">Giỏ hàng</a>
                    </li>
                    <li>
                        <a href="checkout.php">
@@ -58,11 +58,11 @@ include("functions/functions.php");
                            
                            if(!isset($_SESSION['customer_email'])){
                        
-                                echo "<a href='checkout.php'> Login </a>";
+                                echo "<a href='checkout.php'> Đăng ký </a>";
 
                                }else{
 
-                                echo " <a href='logout.php'> Log Out </a> ";
+                                echo " <a href='logout.php'> Đăng xuất </a> ";
 
                                }
                            
@@ -87,8 +87,8 @@ include("functions/functions.php");
                
                <a href="index.php" class="navbar-brand home"><!-- navbar-brand home Begin -->
                    
-                   <img src="images/ecom-store-logo.png" alt="M-dev-Store Logo" class="hidden-xs">
-                   <img src="images/ecom-store-logo-mobile.png" alt="M-dev-Store Logo Mobile" class="visible-xs">
+                   <img src="images/ecom-store-logo.png" alt="KCLaptop Logo" class="hidden-xs">
+                   <img src="images/ecom-store-logo-mobile.png" alt="KCLaptop Logo Mobile" class="visible-xs">
                    
                </a><!-- navbar-brand home Finish -->
                
@@ -116,11 +116,11 @@ include("functions/functions.php");
                    
                    <ul class="nav navbar-nav left"><!-- nav navbar-nav left Begin -->
                        
-                       <li class="<?php if($active=='Home') echo"active"; ?>">
-                           <a href="index.php">Home</a>
+                   <li class="<?php if($active=='Home') echo"active"; ?>">
+                           <a href="index.php">Trang chủ</a>
                        </li>
                        <li class="<?php if($active=='Shop') echo"active"; ?>">
-                           <a href="shop.php">Shop</a>
+                           <a href="shop.php">Sản phẩm</a>
                        </li>
                        <li class="<?php if($active=='Account') echo"active"; ?>">
                            
@@ -128,11 +128,11 @@ include("functions/functions.php");
                            
                            if(!isset($_SESSION['customer_email'])){
                                
-                               echo"<a href='checkout.php'>My Account</a>";
+                               echo"<a href='checkout.php'>Tài khoản</a>";
                                
                            }else{
                                
-                              echo"<a href='customer/my_account.php?my_orders'>My Account</a>"; 
+                              echo"<a href='customer/my_account.php?my_orders'>Tài khoản</a>"; 
                                
                            }
                            
@@ -140,10 +140,10 @@ include("functions/functions.php");
                            
                        </li>
                        <li class="<?php if($active=='Cart') echo"active"; ?>">
-                           <a href="cart.php">Shopping Cart</a>
+                           <a href="cart.php">Giỏ hàng</a>
                        </li>
                        <li class="<?php if($active=='Contact') echo"active"; ?>">
-                           <a href="contact.php">Contact Us</a>
+                           <a href="contact.php">Liên hệ</a>
                        </li>
                        
                    </ul><!-- nav navbar-nav left Finish -->
@@ -154,7 +154,7 @@ include("functions/functions.php");
                    
                    <i class="fa fa-shopping-cart"></i>
                    
-                   <span><?php items(); ?> Items In Your Cart</span>
+                   <span><?php items(); ?> sản phẩm trong giỏ hàng</span>
                    
                </a><!-- btn navbar-btn btn-primary Finish -->
                
@@ -176,7 +176,7 @@ include("functions/functions.php");
                        
                        <div class="input-group"><!-- input-group Begin -->
                            
-                           <input type="text" class="form-control" placeholder="Search" name="user_query" required>
+                           <input type="text" class="form-control" placeholder="Tìm kiếm" name="user_query" required>
                            
                            <span class="input-group-btn"><!-- input-group-btn Begin -->
                            
@@ -205,11 +205,11 @@ include("functions/functions.php");
            <div class="col-md-12"><!-- col-md-12 Begin -->
                
                <ul class="breadcrumb"><!-- breadcrumb Begin -->
-                   <li>
-                       <a href="index.php">Home</a>
+                    <li>
+                       <a href="index.php">Trang chủ</a>
                    </li>
                    <li>
-                       Cart
+                       Giỏ hàng
                    </li>
                </ul><!-- breadcrumb Finish -->
                
@@ -221,7 +221,7 @@ include("functions/functions.php");
                    
                    <form action="cart.php" method="post" enctype="multipart/form-data"><!-- form Begin -->
                        
-                       <h1>Shopping Cart</h1>
+                   <h1>Giỏ hàng</h1>
                        
                        <?php 
                        
@@ -235,7 +235,7 @@ include("functions/functions.php");
                        
                        ?>
                        
-                       <p class="text-muted">You currently have <?php echo $count; ?> item(s) in your cart</p>
+                       <p class="text-muted">Bạn hiện có <?php echo $count; ?> sản phẩm trong giỏ hàng</p>
                        
                        <div class="table-responsive"><!-- table-responsive Begin -->
                            
@@ -245,12 +245,12 @@ include("functions/functions.php");
                                    
                                    <tr><!-- tr Begin -->
                                        
-                                       <th colspan="2">Product</th>
-                                       <th>Quantity</th>
-                                       <th>Unit Price</th>
-                                       <th>Type</th>
-                                       <th colspan="1">Delete</th>
-                                       <th colspan="2">Sub-Total</th>
+                                       <th colspan="2">Sản phẩm</th>
+                                       <th>Số lượng</th>
+                                       <th>Đơn giá</th>
+                                       <th>Kích cỡ</th>
+                                       <th colspan="1">Xóa</th>
+                                       <th colspan="2">Thành tiền</th>
                                        
                                    </tr><!-- tr Finish -->
                                    
@@ -346,7 +346,7 @@ include("functions/functions.php");
                                    
                                    <tr><!-- tr Begin -->
                                        
-                                       <th colspan="5">Total</th>
+                                       <th colspan="5">Thành tiền</th>
                                        <th colspan="2">$<?php echo $total; ?></th>
                                        
                                    </tr><!-- tr Finish -->
@@ -363,25 +363,25 @@ include("functions/functions.php");
                                
                                <a href="index.php" class="btn btn-default"><!-- btn btn-default Begin -->
                                    
-                                   <i class="fa fa-chevron-left"></i> Continue Shopping
+                               <i class="fa fa-chevron-left"></i> Tiếp tục mua sắm
                                    
-                               </a><!-- btn btn-default Finish -->
+                                   </a><!-- btn btn-default Finish -->
+                                   
+                               </div><!-- pull-left Finish -->
                                
-                           </div><!-- pull-left Finish -->
-                           
-                           <div class="pull-right"><!-- pull-right Begin -->
-                               
-                               <button type="submit" name="update" value="Update Cart" class="btn btn-default"><!-- btn btn-default Begin -->
+                               <div class="pull-right"><!-- pull-right Begin -->
                                    
-                                   <i class="fa fa-refresh"></i> Update Cart
+                                   <button type="submit" name="update" value="Update Cart" class="btn btn-default"><!-- btn btn-default Begin -->
+                                       
+                                       <i class="fa fa-refresh"></i> Cập nhật giỏ hàng
+                                       
+                                   </button><!-- btn btn-default Finish -->
                                    
-                               </button><!-- btn btn-default Finish -->
-                               
-                               <a href="checkout.php" class="btn btn-primary">
-                                   
-                                   Proceed Checkout <i class="fa fa-chevron-right"></i>
-                                   
-                               </a>
+                                   <a href="checkout.php" class="btn btn-primary">
+                                       
+                                       Tiến hành thanh toán <i class="fa fa-chevron-right"></i>
+                                       
+                                   </a>
                                
                            </div><!-- pull-right Finish -->
                            
@@ -424,7 +424,7 @@ include("functions/functions.php");
                <div id="row same-heigh-row"><!-- #row same-heigh-row Begin -->
                    <div class="col-md-3 col-sm-6"><!-- col-md-3 col-sm-6 Begin -->
                        <div class="box same-height headline"><!-- box same-height headline Begin -->
-                           <h3 class="text-center">Products You Maybe Like</h3>
+                       <h3 class="text-center">Sản phẩm có thể bạn thích</h3>
                        </div><!-- box same-height headline Finish -->
                    </div><!-- col-md-3 col-sm-6 Finish -->
                    
@@ -513,13 +513,13 @@ include("functions/functions.php");
                                 
                                     <a class='btn btn-default' href='details.php?pro_id=$pro_id'>
             
-                                        View Details
+                                       Xem chi tiết
             
                                     </a>
                                 
                                     <a class='btn btn-primary' href='details.php?pro_id=$pro_id'>
             
-                                        <i class='fa fa-shopping-cart'></i> Add to Cart
+                                        <i class='fa fa-shopping-cart'></i> Thêm vào giỏ hàng
             
                                     </a>
                                 
@@ -547,15 +547,15 @@ include("functions/functions.php");
                
                <div id="order-summary" class="box"><!-- box Begin -->
                    
-                   <div class="box-header"><!-- box-header Begin -->
+               <div class="box-header"><!-- box-header Begin -->
                        
-                       <h3>Order Summary</h3>
+                       <h3>Tóm tắt đơn hàng</h3>
                        
                    </div><!-- box-header Finish -->
                    
                    <p class="text-muted"><!-- text-muted Begin -->
                        
-                       Shipping and additional costs are calculated based on value you have entered
+                        Chi phí vận chuyển và chi phí bổ sung được tính dựa trên giá trị bạn đã nhập
                        
                    </p><!-- text-muted Finish -->
                    
@@ -574,21 +574,21 @@ include("functions/functions.php");
                                
                                <tr><!-- tr Begin -->
                                    
-                                   <td> Shipping and Handling </td>
+                                   <td> Vận chuyển và xử lý </td>
                                    <td> $0 </td>
                                    
                                </tr><!-- tr Finish -->
                                
                                <tr><!-- tr Begin -->
                                    
-                                   <td> Tax </td>
+                                   <td> Thuế </td>
                                    <th> $0 </th>
                                    
                                </tr><!-- tr Finish -->
                                
                                <tr class="total"><!-- tr Begin -->
                                    
-                                   <td> Total </td>
+                                   <td> Thành tiền </td>
                                    <th> $<?php echo $total; ?> </th>
                                    
                                </tr><!-- tr Finish -->

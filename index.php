@@ -83,14 +83,14 @@
                <a href="#myCarousel" class="left carousel-control" data-slide="prev"><!-- left carousel-control Begin -->
                    
                    <span class="glyphicon glyphicon-chevron-left"></span>
-                   <span class="sr-only">Previous</span>
+                   <span class="sr-only">Trước</span>
                    
                </a><!-- left carousel-control Finish -->
                
                <a href="#myCarousel" class="right carousel-control" data-slide="next"><!-- left carousel-control Begin -->
                    
                    <span class="glyphicon glyphicon-chevron-right"></span>
-                   <span class="sr-only">Next</span>
+                   <span class="sr-only">Sau</span>
                    
                </a><!-- left carousel-control Finish -->
                
@@ -154,7 +154,7 @@
                <div class="col-md-12"><!-- col-md-12 Begin -->
                    
                    <h2>
-                       Our Latest Products
+                        Sản phẩm mới nhất của chúng tôi
                    </h2>
                    
                </div><!-- col-md-12 Finish -->
