@@ -39,7 +39,7 @@ include("functions/functions.php");
         
     $pro_features = $row_products['product_features'];
         
-    $pro_video = $row_products['product_video'];
+    $pro_details = $row_products['product_details'];
     
     $pro_img1 = $row_products['product_img1'];
     
