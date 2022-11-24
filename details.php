@@ -396,7 +396,7 @@ include("functions/functions.php");
 
                                             <p class='price'>
 
-                                            PRICE: $ $pro_price
+                                            Giá: $ $pro_price
 
                                             </p>
 
