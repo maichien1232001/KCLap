@@ -253,7 +253,7 @@
 
                                     }else{
 
-                                        echo "<script>alert('Your Coupon Didnt Match With Your Product On Your Cart')</script>";
+                                        echo "<script>alert('Phiếu giảm giá của bạn không khớp với sản phẩm trên giỏ hàng của bạn')</script>";
 
                                     }
 
@@ -261,7 +261,7 @@
 
                             }else{
 
-                                echo "<script>alert('You Coupon Is Not Valid')</script>";
+                                echo "<script>alert('Phiếu giảm giá của bạn không hợp lệ')</script>";
 
                             }
 

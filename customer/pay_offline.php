@@ -24,7 +24,7 @@
             
             <th> Chi tiết tài khoản ngân hàng: </th>
             <th> Paypal, Easy Paisa, UBL: </th>
-            <th> Chi tiết Western Union: </th>
+            <th> Tài khoản ViSa: </th>
 
         </tr><!--  tr Finish  -->
             
@@ -32,9 +32,9 @@
         
         <tbody><!--  tbody Begin  -->
            
-           <td> Tên ngân hàng: UBL | Tài khoản số: 180-839-032 | Tên chi nhánh: Lahore | Mã chi nhánh: 1498 </td>
+           <td> Tên ngân hàng: Techcombank | Tài khoản số: 180-839-032 | Tên chi nhánh: Hoa Kỳ | Mã chi nhánh: 1498 </td>
            <td> NIC #980-231-907 | Số điện thoại: 0931-7894-9983 | Tên: MrKC </td>
-           <td> Tên thật: Lê Thế Kỷ | Số điện thoại: 0931-7894-9983 Quốc gia: VietNam | Tên: MrKC | NIC #980-231-907 </td>
+           <td> Tên: Lê Thế Kỷ | Số điện thoại: 0931-7894-9983 Quốc gia: VietNam | Tên: MrKC | NIC #980-231-907 </td>
             
         </tbody>
         

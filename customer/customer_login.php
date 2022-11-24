@@ -8,7 +8,7 @@
           
           <p class="lead"> Bạn đã có tài khoản? </p>
           
-          <p class="text-muted"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, maxime. Laudantium omnis, ullam, fuga officia provident error corporis consectetur aliquid corrupti recusandae minus ipsam quasi. Perspiciatis nemo, nostrum magni odit! </p>
+          <p class="text-muted"> Điều quan trọng là phải chú ý tới khách hàng. Hãy để họ là thượng đế. Cung cấp cho khách hàng những dịch vụ tốt nhất! </p>
           
       </center><!-- center Finish -->
       

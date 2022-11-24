@@ -406,7 +406,7 @@ include("functions/functions.php");
                                
                                ?>
                                
-                               <p class="text-center buttons"><button type="submit" name="add_cart" class="btn btn-primary i fa fa-shopping-cart"> Add to cart</button></p>
+                               <p class="text-center buttons"><button type="submit" name="add_cart" class="btn btn-primary i fa fa-shopping-cart"> Thêm vào giỏ hàng</button></p>
                                
                            </form><!-- form-horizontal Finish -->
 
@@ -432,7 +432,7 @@ include("functions/functions.php");
                             
                             if(mysqli_num_rows($run_check)>0){
                                 
-                                echo "<script>alert('This product has already added in cart')</script>";
+                                echo "<script>alert('Sản phẩm này đã được thêm vào giỏ hàng')</script>";
                                 echo "<script>window.open('$pro_url','_self')</script>";
                                 
                             }else{
@@ -655,13 +655,13 @@ include("functions/functions.php");
                                 
                                     <a class='btn btn-default' href='$pro_url'>
             
-                                        View Details
+                                        Xem chi tiết
             
                                     </a>
                                 
                                     <a class='btn btn-primary' href='$pro_url'>
             
-                                        <i class='fa fa-shopping-cart'></i> Add to Cart
+                                        <i class='fa fa-shopping-cart'></i> Thêm vào giỏ hàng
             
                                     </a>
                                 
