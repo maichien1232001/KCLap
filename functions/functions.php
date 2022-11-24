@@ -1,6 +1,6 @@
 <?php 
 
-$db = mysqli_connect("localhost","root","","ecom_store");
+$db = mysqli_connect("localhost","root","","kychienlaptop");
 
 /// begin getRealIpUser functions ///
 
@@ -118,7 +118,7 @@ function getPro(){
                     
                         <a class='btn btn-primary' href='$pro_url'>
 
-                            <i class='fa fa-shopping-cart'></i> Add to Cart
+                            <i class='fa fa-shopping-cart'></i> Thêm vào giỏ hàng
 
                         </a>
                     
