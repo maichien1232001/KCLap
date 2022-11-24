@@ -12,7 +12,7 @@ include("functions/functions.php");
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>M-Dev Store</title>
+    <title>KCLaptop</title>
     <link rel="stylesheet" href="styles/bootstrap-337.min.css">
     <link rel="stylesheet" href="font-awsome/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles/style.css">
@@ -31,18 +31,18 @@ include("functions/functions.php");
                    
                    if(!isset($_SESSION['customer_email'])){
                        
-                       echo "Welcome: Guest";
-                       
-                   }else{
-                       
-                       echo "Welcome: " . $_SESSION['customer_email'] . "";
-                       
-                   }
+                        echo "Xin chào: khách hàng";
+                    
+                    }else{
+                        
+                        echo "Xin chào: " . $_SESSION['customer_email'] . "";
+                        
+                    }
                    
                    ?>
                    
                </a>
-               <a href="checkout.php"><?php items(); ?> Items In Your Cart | Total Price: <?php total_price(); ?> </a>
+               <a href="checkout.php"><?php items(); ?> sản phẩm trong giỏ | Thành tiền: <?php total_price(); ?> </a>
                
            </div><!-- col-md-6 offer Finish -->
            
@@ -50,14 +50,14 @@ include("functions/functions.php");
                
                <ul class="menu"><!-- cmenu Begin -->
                    
-                   <li>
-                       <a href="customer_register.php">Register</a>
+               <li>
+                       <a href="customer_register.php">Đăng ký</a>
                    </li>
                    <li>
-                       <a href="checkout.php">My Account</a>
+                       <a href="checkout.php">Tài khoản</a>
                    </li>
                    <li>
-                       <a href="cart.php">Go To Cart</a>
+                       <a href="cart.php">Giỏ hàng</a>
                    </li>
                    <li>
                        <a href="checkout.php">
@@ -66,11 +66,11 @@ include("functions/functions.php");
                            
                            if(!isset($_SESSION['customer_email'])){
                        
-                                echo "<a href='checkout.php'> Login </a>";
+                                echo "<a href='checkout.php'> Đăng xuất </a>";
 
                                }else{
 
-                                echo " <a href='logout.php'> Log Out </a> ";
+                                echo " <a href='logout.php'> Đăng nhập </a> ";
 
                                }
                            
@@ -95,8 +95,8 @@ include("functions/functions.php");
                
                <a href="index.php" class="navbar-brand home"><!-- navbar-brand home Begin -->
                    
-                   <img src="images/ecom-store-logo.png" alt="M-dev-Store Logo" class="hidden-xs">
-                   <img src="images/ecom-store-logo-mobile.png" alt="M-dev-Store Logo Mobile" class="visible-xs">
+                   <img src="images/ecom-store-logo.png" alt="KCLaptop Logo" class="hidden-xs">
+                   <img src="images/ecom-store-logo-mobile.png" alt="KCLaptop Logo Mobile" class="visible-xs">
                    
                </a><!-- navbar-brand home Finish -->
                
@@ -124,11 +124,11 @@ include("functions/functions.php");
                    
                    <ul class="nav navbar-nav left"><!-- nav navbar-nav left Begin -->
                        
-                       <li class="<?php if($active=='Home') echo"active"; ?>">
-                           <a href="index.php">Home</a>
+                   <li class="<?php if($active=='Home') echo"active"; ?>">
+                           <a href="index.php">Trang chủ</a>
                        </li>
                        <li class="<?php if($active=='Shop') echo"active"; ?>">
-                           <a href="shop.php">Shop</a>
+                           <a href="shop.php">Sản phẩm</a>
                        </li>
                        <li class="<?php if($active=='Account') echo"active"; ?>">
                            
@@ -136,11 +136,11 @@ include("functions/functions.php");
                            
                            if(!isset($_SESSION['customer_email'])){
                                
-                               echo"<a href='checkout.php'>My Account</a>";
+                               echo"<a href='checkout.php'>Tài khoản</a>";
                                
                            }else{
                                
-                              echo"<a href='customer/my_account.php?my_orders'>My Account</a>"; 
+                              echo"<a href='customer/my_account.php?my_orders'>Tài khoản</a>"; 
                                
                            }
                            
@@ -148,10 +148,10 @@ include("functions/functions.php");
                            
                        </li>
                        <li class="<?php if($active=='Cart') echo"active"; ?>">
-                           <a href="cart.php">Shopping Cart</a>
+                           <a href="cart.php">Giỏ hàng</a>
                        </li>
                        <li class="<?php if($active=='Contact') echo"active"; ?>">
-                           <a href="contact.php">Contact Us</a>
+                           <a href="contact.php">Liên hệ</a>
                        </li>
                        
                    </ul><!-- nav navbar-nav left Finish -->
@@ -162,7 +162,7 @@ include("functions/functions.php");
                    
                    <i class="fa fa-shopping-cart"></i>
                    
-                   <span><?php items(); ?> Items In Your Cart</span>
+                   <span><?php items(); ?> sản phẩm trong giỏ hàng</span>
                    
                </a><!-- btn navbar-btn btn-primary Finish -->
                
@@ -184,7 +184,7 @@ include("functions/functions.php");
                        
                        <div class="input-group"><!-- input-group Begin -->
                            
-                           <input type="text" class="form-control" placeholder="Search" name="user_query" required>
+                           <input type="text" class="form-control" placeholder="Tìm kiếm" name="user_query" required>
                            
                            <span class="input-group-btn"><!-- input-group-btn Begin -->
                            
