@@ -110,7 +110,7 @@ include("functions/functions.php");
                    ?>
                    
                </a>
-               <a href="checkout.php"><?php items(); ?> Danh sách đồ trong giỏ hàng | Tổng tiền: <?php total_price(); ?> </a>
+               <a href="checkout.php"><?php items(); ?> sản phẩm trong giỏ hàng | Tổng tiền: <?php total_price(); ?> </a>
                
            </div><!-- col-md-6 offer Finish -->
            
