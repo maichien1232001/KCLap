@@ -240,7 +240,7 @@ if(isset($_GET['order_id'])){
                        
                        <div class="form-group"><!-- form-group Begin -->
                            
-                         <label> Hóa đơn không có: </label>
+                         <label> Số hóa đơn: </label>
                           
                           <input type="text" class="form-control" name="invoice_no" required>
                            
@@ -344,7 +344,7 @@ if(isset($_GET['order_id'])){
                         
                         if($run_pending_order){
                             
-                            echo "<script>alert('Thank You for purchasing, your orders will be completed within 24 hours work')</script>";
+                            echo "<script>alert('Cảm ơn bạn đã mua hàng, đơn đặt hàng của bạn sẽ được hoàn thành trong vòng 24 giờ làm việc')</script>";
                             
                             echo "<script>window.open('my_account.php?my_orders','_self')</script>";
                             

@@ -1,6 +1,6 @@
 <?php 
 
-$db = mysqli_connect("localhost","root","","ecom_store");
+$db = mysqli_connect("localhost","root","","kychienlaptop");
 
 /// begin getRealIpUser functions ///
 
@@ -112,13 +112,13 @@ function getPro(){
                     
                         <a class='btn btn-default' href='$pro_url'>
 
-                            View Details
+                            Xem chi tiết
 
                         </a>
                     
                         <a class='btn btn-primary' href='$pro_url'>
 
-                            <i class='fa fa-shopping-cart'></i> Add to Cart
+                            <i class='fa fa-shopping-cart'></i> Thêm vào giỏ hàng
 
                         </a>
                     
@@ -395,13 +395,13 @@ function getProducts(){
                     
                         <a class='btn btn-default' href='$pro_url'>
 
-                            View Details
+                            Xem chi tiết
 
                         </a>
                     
                         <a class='btn btn-primary' href='$pro_url'>
 
-                            <i class='fa fa-shopping-cart'></i> Add to Cart
+                            <i class='fa fa-shopping-cart'></i> Thêm vào giỏ hàng
 
                         </a>
                     
@@ -484,7 +484,7 @@ function getPaginator(){
 
     }
 
-    echo "'>".'First Page'."</a></li>";
+    echo "'>".'Trang đầu'."</a></li>";
 
     for($i=1; $i<=$total_pages; $i++){
 
@@ -500,7 +500,7 @@ function getPaginator(){
 
     }
 
-    echo "'>".'Last Page'."</a></li>";
+    echo "'>".'Trang cuối'."</a></li>";
 
 }
 
