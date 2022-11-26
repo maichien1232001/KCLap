@@ -121,11 +121,11 @@
                                     
                                         if($order_status=='pending'){
                                             
-                                            echo $order_status='pending';
+                                            echo $order_status='Chờ thanh toán';
                                             
                                         }else{
                                             
-                                            echo $order_status='Complete';
+                                            echo $order_status='Đã thanh toán';
                                             
                                         }
                                     

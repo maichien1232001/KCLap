@@ -60,6 +60,8 @@
             while($row_orders = mysqli_fetch_array($run_orders)){
                 
                 $order_id = $row_orders['order_id'];
+
+                $p_id = $row_orders['p_id'];
                 
                 $due_amount = $row_orders['due_amount'];
                 
@@ -76,13 +78,29 @@
                 $i++;
                 
                 if($order_status=='pending'){
+
+                    $get_p_orders = "select * from customer_orders where customer_id='$customer_id' and order_status = 'pending'";
+            
+                    $run_p_orders = mysqli_query($con,$get_p_orders);
                     
-                    $order_status = 'Unpaid';
+                    while($row_porders = mysqli_fetch_array($run_p_orders)){
+
+                        $p_id = $row_porders['p_id'];
+                        
+                        $qty = $row_porders['qty'];
+
+                        $order_status = $row_porders['order_status'];
+                        
+                        $update_qty = "update products set product_qty = product_qty - $qty  where product_id='$p_id'";
+                        
+                        $run_update_qty = mysqli_query($con,$update_qty);
+                    }
+                    
+                    $order_status = 'Chưa thanh toán';
                     
                 }else{
                     
-                    $order_status = 'Paid';
-                    
+                    $order_status = 'Đã thanh toán';
                 }
             
             ?>

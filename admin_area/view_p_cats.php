@@ -37,11 +37,11 @@
                         
                         <thead><!-- thead begin -->
                             <tr><!-- tr begin -->
-                                <th> Mã danh mục sản phẩm ID </th>
-                                <th> Têm danh mục sản phẩm Title </th>
+                                <th> Mã danh mục sản phẩm </th>
+                                <th> Têm danh mục sản phẩm </th>
                                 <th> Top danh mục sản phẩm </th>
                                 <th> Sửa danh mục sản phẩm </th>
-                                <th> Delete danh mục sản phẩm </th>
+                                <th> Xóa danh mục sản phẩm </th>
                             </tr><!-- tr finish -->
                         </thead><!-- thead finish -->
                         
@@ -78,7 +78,7 @@
                                 </td>
                                 <td> 
                                     <a href="index.php?delete_p_cat= <?php echo $p_cat_id; ?> ">
-                                        <i class="fa fa-trash"></i> Delete
+                                        <i class="fa fa-trash"></i> Xóa
                                     </a>
                                 </td>
                             </tr><!-- tr finish -->

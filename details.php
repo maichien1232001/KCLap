@@ -362,7 +362,7 @@ include("functions/functions.php");
                                    
                                    <div class="col-md-7"><!-- col-md-7 Begin -->
                                        
-                                       <select name="product_size" class="form-control" required oninput="setCustomValidity('')" oninvalid="setCustomValidity('Must pick 1 size for the product')"><!-- form-control Begin -->
+                                       <select name="product_type" class="form-control" required oninput="setCustomValidity('')" oninvalid="setCustomValidity('Bạn phải chọn 1 dòng máy')"><!-- form-control Begin -->
                                           
                                            <option value="" disabled selected>Chọn dòng máy</option>
                                            <option>Cổ điển</option>
@@ -406,7 +406,7 @@ include("functions/functions.php");
                                
                                ?>
                                
-                               <p class="text-center buttons"><button type="submit" name="add_cart" class="btn btn-primary i fa fa-shopping-cart"> Add to cart</button></p>
+                               <p class="text-center buttons"><button type="submit" name="add_cart" class="btn btn-primary i fa fa-shopping-cart"> Thêm vào giỏ hàng</button></p>
                                
                            </form><!-- form-horizontal Finish -->
 
@@ -432,7 +432,7 @@ include("functions/functions.php");
                             
                             if(mysqli_num_rows($run_check)>0){
                                 
-                                echo "<script>alert('This product has already added in cart')</script>";
+                                echo "<script>alert('Sản phẩm này đã được thêm vào giỏ hàng')</script>";
                                 echo "<script>window.open('$pro_url','_self')</script>";
                                 
                             }else{

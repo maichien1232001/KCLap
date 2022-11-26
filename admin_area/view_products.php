@@ -42,7 +42,7 @@
                                 <th> Ảnh sản phẩm  </th>
                                 <th> Giá sản phẩm </th>
                                 <th> Số sản phẩm đã bán </th>
-                                <th> Từ khóa sản phẩm </th>
+                                <th> Số sản phẩm tồn kho </th>
                                 <th> Ngày tạo sản phẩm  </th>
                                 <th> Xóa sản phẩm  </th>
                                 <th> Sửa sản phẩm  </th>
@@ -69,7 +69,7 @@
                                     
                                     $pro_price = $row_pro['product_price'];
                                     
-                                    $pro_keywords = $row_pro['product_keywords'];
+                                    $pro_qty = $row_pro['product_qty'];
                                     
                                     $pro_date = $row_pro['date'];
                                     
@@ -94,7 +94,7 @@
                                     
                                      ?> 
                                 </td>
-                                <td> <?php echo $pro_keywords; ?> </td>
+                                <td> <?php echo $pro_qty; ?> </td>
                                 <td> <?php echo $pro_date ?> </td>
                                 <td> 
                                      
