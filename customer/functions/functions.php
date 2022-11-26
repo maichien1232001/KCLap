@@ -237,7 +237,7 @@ function getpcatpro(){
             
                 <div class='box'>
                 
-                    <h1> No Product Found In This Product Categories </h1>
+                    <h1> Không tìm thấy sản phẩm nào trong danh mục sản phẩm này </h1>
                 
                 </div>
             
@@ -303,13 +303,13 @@ function getpcatpro(){
                     
                         <a class='btn btn-default' href='details.php?pro_id=$pro_id'>
 
-                            View Details
+                            Xem chi tiết
 
                         </a>
                     
                         <a class='btn btn-primary' href='details.php?pro_id=$pro_id'>
 
-                            <i class='fa fa-shopping-cart'></i> Add to Cart
+                            <i class='fa fa-shopping-cart'></i> Thêm vào giỏ hàng
 
                         </a>
                     
@@ -364,7 +364,7 @@ function getcatpro(){
             
                 <div class='box'>
                 
-                    <h1> No Product Found In This Category </h1>
+                    <h1> Không tìm thấy sản phẩm nào trong danh mục sản phẩm này </h1>
                 
                 </div>
             
@@ -428,13 +428,13 @@ function getcatpro(){
 
                                 <a class='btn btn-default' href='details.php?pro_id=$pro_id'>
 
-                                View Details
+                                    Xem chi tiết
 
                                 </a>
 
                                 <a class='btn btn-primary' href='details.php?pro_id=$pro_id'>
 
-                                <i class='fa fa-shopping-cart'></i> Add To Cart
+                                <i class='fa fa-shopping-cart'></i> Thêm vào giỏ hàng
 
                                 </a>
 

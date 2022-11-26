@@ -110,7 +110,7 @@ include("functions/functions.php");
                    ?>
                    
                </a>
-               <a href="checkout.php"><?php items(); ?> Danh sách đồ trong giỏ hàng | Tổng tiền: <?php total_price(); ?> </a>
+               <a href="checkout.php"><?php items(); ?> sản phẩm trong giỏ hàng | Tổng tiền: <?php total_price(); ?> </a>
                
            </div><!-- col-md-6 offer Finish -->
            
@@ -396,7 +396,7 @@ include("functions/functions.php");
 
                                             <p class='price'>
 
-                                            PRICE: $ $pro_price
+                                            Giá: $ $pro_price
 
                                             </p>
 
@@ -655,13 +655,13 @@ include("functions/functions.php");
                                 
                                     <a class='btn btn-default' href='$pro_url'>
             
-                                        View Details
+                                        Xem chi tiết
             
                                     </a>
                                 
                                     <a class='btn btn-primary' href='$pro_url'>
             
-                                        <i class='fa fa-shopping-cart'></i> Add to Cart
+                                        <i class='fa fa-shopping-cart'></i> Thêm vào giỏ hàng
             
                                     </a>
                                 

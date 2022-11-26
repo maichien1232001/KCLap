@@ -37,11 +37,11 @@ include("functions/functions.php");
                    
                    if(!isset($_SESSION['customer_email'])){
                        
-                    echo "Welcome: Khách hàng";
+                    echo "Xin chào: Khách hàng";
                     
                 }else{
                     
-                    echo "Welcome: " . $_SESSION['customer_email'] . "";
+                    echo "Xin chào: " . $_SESSION['customer_email'] . "";
                     
                 }
                    

@@ -26,7 +26,7 @@
                 
                 <th> Số hóa đơn: </th>
                 <th> Số tiền phải trả: </th>
-                <th> Hóa đơn không có: </th>
+                <th> Số hóa đơn: </th>
                 <th> Số lượng: </th>
                 <th> Kiểu: </th>
                 <th> Ngày đặt hàng:</th>
@@ -117,7 +117,7 @@
                 
                 <td>
                     
-                    <a href="confirm.php?order_id=<?php echo $order_id; ?>" target="_blank" class="btn btn-primary btn-sm"> Confirm Paid </a>
+                    <a href="confirm.php?order_id=<?php echo $order_id; ?>" target="_blank" class="btn btn-primary btn-sm"> Xác nhận đã thanh toán </a>
                     
                 </td>
                 
