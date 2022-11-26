@@ -45,6 +45,8 @@ function getPro(){
         $pro_img1 = $row_products['product_img1'];
         
         $pro_label = $row_products['product_label'];
+        
+        $pro_qty = $row_products['product_qty'];
 
         if($pro_label == "sale"){
 
@@ -76,8 +78,9 @@ function getPro(){
             ";
 
         }
-        
-        echo "
+        if($pro_qty > 0){
+
+            echo "
         
         <div class='col-md-4 col-sm-6 single'>
         
@@ -133,6 +136,59 @@ function getPro(){
         </div>
         
         ";
+
+        }
+        else{
+
+            echo "
+        
+        <div class='col-md-4 col-sm-6 single'>
+        
+            <div class='product'>
+            
+                <a href='$pro_url'>
+                
+                    <img class='img-responsive' src='admin_area/product_images/$pro_img1'>
+                
+                </a>
+                
+                <div class='text'>
+
+                
+                    <h3>
+            
+                        <a href='$pro_url'>
+
+                            $pro_title
+
+                        </a>
+                    
+                    </h3>
+                    
+                    <p class='price'>
+                    
+                    $product_price &nbsp;$product_sale_price
+                    
+                    </p>
+                    
+                    <p class='button'>
+                    
+                        Sản phẩm đã hết hàng
+                    
+                    </p>
+                
+                </div>
+
+                $product_label
+            
+            </div>
+        
+        </div>
+        
+        ";
+
+        }
+        
         
     }
     

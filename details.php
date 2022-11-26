@@ -426,17 +426,12 @@ include("functions/functions.php");
         
                             $pro_url = $row_products['product_url'];
                             
-                            $check_product = "select * from cart where ip_add='$ip_add' AND p_id='$p_id'";
+                            $check_product = "select * from cart,products where p_id = product_id AND ip_add='$ip_add' AND p_id='$p_id' AND product_qty > '$product_qty'";
                             
                             $run_check = mysqli_query($con,$check_product);
                             
                             if(mysqli_num_rows($run_check)>0){
-                                
-                                echo "<script>alert('Sản phẩm này đã được thêm vào giỏ hàng')</script>";
-                                echo "<script>window.open('$pro_url','_self')</script>";
-                                
-                            }else{
-                    
+
                                 $get_price ="select * from products where product_id='$p_id'";
                     
                                 $run_price = mysqli_query($con,$get_price);
@@ -462,7 +457,12 @@ include("functions/functions.php");
                                 $query = "insert into cart (p_id,ip_add,qty,p_price,type) values ('$p_id','$ip_add','$product_qty','$product_price','$product_type')";
                                 
                                 $run_query = mysqli_query($con,$query);
+
+                                echo "<script>window.open('$pro_url','_self')</script>";
                                 
+                            }else{
+  
+                                echo "<script>alert('Bạn đã đặt quá số lượng hàng tồn của sản phẩm')</script>";
                                 echo "<script>window.open('$pro_url','_self')</script>";
                                 
                             }
