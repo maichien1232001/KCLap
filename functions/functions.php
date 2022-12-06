@@ -196,6 +196,184 @@ function getPro(){
 
 /// finish getPro functions ///
 
+/// begin getHotPro functions ///
+
+function getHotPro(){
+    
+    global $db;
+
+    $get_products = "select product_id,product_title ,product_url ,product_price ,product_sale ,product_img1 ,product_label 
+    ,product_qty ,p_id, SUM(qty) AS qty from customer_orders,products WHERE p_id = product_id GROUP BY p_id order by qty 
+    DESC LIMIT 0,8;";
+    
+    $run_products = mysqli_query($db,$get_products);
+    
+    while($row_products=mysqli_fetch_array($run_products)){
+        
+        $pro_id = $row_products['product_id'];
+        
+        $pro_title = $row_products['product_title'];
+        
+        $pro_url = $row_products['product_url'];
+        
+        $pro_price = $row_products['product_price'];
+
+        $pro_sale_price = $row_products['product_sale'];
+        
+        $pro_img1 = $row_products['product_img1'];
+        
+        $pro_label = $row_products['product_label'];
+        
+        $pro_qty = $row_products['product_qty'];
+
+        if($pro_label == "sale"){
+
+            $product_price = " <del> $ $pro_price </del> ";
+
+            $product_sale_price = "/ $ $pro_sale_price ";
+
+        }else{
+
+            $product_price = "  $ $pro_price  ";
+
+            $product_sale_price = "";
+
+        }
+
+        if($pro_label == ""){
+
+        }else{
+
+            $product_label = "
+            
+                <a href='#' class='label $pro_label'>
+                
+                    <div class='theLabel'> $pro_label </div>
+                    <div class='labelBackground'>  </div>
+                
+                </a>
+            
+            ";
+
+        }
+        if($pro_qty > 0){
+
+            echo "
+        
+        <div class='col-md-4 col-sm-6 single'>
+        
+            <div class='product'>
+            
+                <a href='$pro_url'>
+                
+                    <img class='img-responsive' src='admin_area/product_images/$pro_img1'>
+                
+                </a>
+                
+                <div class='text'>
+
+                
+                    <h3>
+            
+                        <a href='$pro_url'>
+
+                            $pro_title
+
+                        </a>
+                    
+                    </h3>
+                    
+                    <p class='price'>
+                    
+                    $product_price &nbsp;$product_sale_price
+                    
+                    </p>
+                    
+                    <p class='button'>
+                    
+                        <a class='btn btn-default' href='$pro_url'>
+
+                            Xem chi tiết
+
+                        </a>
+                    
+                        <a class='btn btn-primary' href='$pro_url'>
+
+                            <i class='fa fa-shopping-cart'></i> Thêm vào giỏ hàng
+
+                        </a>
+                    
+                    </p>
+                
+                </div>
+
+                $product_label
+            
+            </div>
+        
+        </div>
+        
+        ";
+
+        }
+        else{
+
+            echo "
+        
+        <div class='col-md-4 col-sm-6 single'>
+        
+            <div class='product'>
+            
+                <a href='$pro_url'>
+                
+                    <img class='img-responsive' src='admin_area/product_images/$pro_img1'>
+                
+                </a>
+                
+                <div class='text'>
+
+                
+                    <h3>
+            
+                        <a href='$pro_url'>
+
+                            $pro_title
+
+                        </a>
+                    
+                    </h3>
+                    
+                    <p class='price'>
+                    
+                    $product_price &nbsp;$product_sale_price
+                    
+                    </p>
+                    
+                    <p class='button'>
+                    
+                        Sản phẩm đã hết hàng
+                    
+                    </p>
+                
+                </div>
+
+                $product_label
+            
+            </div>
+        
+        </div>
+        
+        ";
+
+        }
+        
+        
+    }
+    
+}
+
+/// finish getHotPro functions ///
+
 /// begin getPCats functions ///
 
 function getPCats(){

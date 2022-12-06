@@ -92,6 +92,10 @@
                         
                         include("view_products.php");
                         
+                }   if(isset($_GET['view_static'])){
+                        
+                        include("view_static.php");
+                        
                 }   if(isset($_GET['delete_product'])){
                         
                         include("delete_product.php");

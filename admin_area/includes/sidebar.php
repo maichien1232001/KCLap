@@ -157,6 +157,15 @@
                 </ul><!-- collapse finish -->
                 
             </li><!-- li finish -->
+
+            <li><!-- li begin -->
+                <a href="index.php?view_static"><!-- a href begin -->
+                        
+                        <i class="fa fa-fw fa-book"></i>Thống kê
+                        
+                </a><!-- a href finish -->
+                
+            </li><!-- li finish -->
             
             <li><!-- li begin -->
                 <a href="#" data-toggle="collapse" data-target="#slides"><!-- a href begin -->
