@@ -81,7 +81,7 @@ include("functions/functions.php");
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>M-Dev Store</title>
+    <title>KCLaptop</title>
     <link rel="stylesheet" href="styles/bootstrap-337.min.css">
     <link rel="stylesheet" href="font-awsome/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles/style.css">
@@ -230,7 +230,7 @@ include("functions/functions.php");
                    
                    <i class="fa fa-shopping-cart"></i>
                    
-                   <span><?php items(); ?> Đồ trong giỏ</span>
+                   <span><?php items(); ?> sản phẩm trong giỏ</span>
                    
                </a><!-- btn navbar-btn btn-primary Finish -->
                
@@ -309,13 +309,13 @@ include("functions/functions.php");
                                
                                <div class="carousel-inner">
                                    <div class="item active">
-                                       <center><img class="img-responsive" src="admin_area/product_images/<?php echo $pro_img1; ?>" alt="Product 3-a"></center>
+                                       <center><img class="img-responsive" src="admin_area/product_images/rog flow.png ?>" alt="Product 3-a"></center>
                                    </div>
                                    <div class="item">
-                                       <center><img class="img-responsive" src="admin_area/product_images/<?php echo $pro_img2; ?>" alt="Product 3-b"></center>
+                                       <center><img class="img-responsive" src="admin_area/product_images/rog zephyrus.png ?>" alt="Product 3-b"></center>
                                    </div>
                                    <div class="item">
-                                       <center><img class="img-responsive" src="admin_area/product_images/<?php echo $pro_img3; ?>" alt="Product 3-c"></center>
+                                       <center><img class="img-responsive" src="admin_area/product_images/ ?>" alt="Product 3-c"></center>
                                    </div>
                                </div>
                                
@@ -382,9 +382,9 @@ include("functions/functions.php");
 
                                             <p class='price'>
 
-                                            Giá: <del> $pro_price đ</del><br/>
+                                            Giá: <del> $pro_price $</del><br/>
 
-                                            Giá:    $pro_sale_price   đ
+                                            Giá:    $pro_sale_price   $
 
                                             </p>
 
@@ -396,7 +396,7 @@ include("functions/functions.php");
 
                                             <p class='price'>
 
-                                            Giá: $ $pro_price
+                                            Giá:  $pro_price $
 
                                             </p>
 
@@ -512,11 +512,6 @@ include("functions/functions.php");
                         Tính năng sản phẩm
                     
                     </a>
-                    <a data-toggle="tab" href="#videos" class="btn btn-primary tab">
-                    
-                        Video minh họa
-                    
-                    </a>   
                     <!-- Tab Buttons End -->
 
                     <hr style="margin-top:25px;">
@@ -545,15 +540,6 @@ include("functions/functions.php");
 
                         </div> <!-- Tab-pane End -->
 
-                        <div class="tab-pane fade in" id="videos"> <!-- Tab-pane Start -->
-
-                            <p class="product_videos">
-                            
-                                <?php echo $pro_video; ?>
-                            
-                            </p>
-
-                        </div> <!-- Tab-pane End -->
 
                     </div>
 
