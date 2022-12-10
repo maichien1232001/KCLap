@@ -101,8 +101,8 @@ include("functions/functions.php");
                
                <a href="../index.php" class="navbar-brand home"><!-- navbar-brand home Begin -->
                    
-                   <img src="images/ecom-store-logo.png" alt="M-dev-Store Logo" class="hidden-xs">
-                   <img src="images/ecom-store-logo-mobile.png" alt="M-dev-Store Logo Mobile" class="visible-xs">
+                   <img src="images/up.png" alt="KCLaptop Logo" class="hidden-xs img-shop">
+                   <img src="images/logoMb.png" alt="KCLaptop Logo Mobile" class="visible-xs">
                    
                </a><!-- navbar-brand home Finish -->
                
@@ -233,14 +233,6 @@ include("functions/functions.php");
                    
                    if (isset($_GET['my_orders'])){
                        include("my_orders.php");
-                   }
-                   
-                   ?>
-                   
-                   <?php
-                   
-                   if (isset($_GET['pay_offline'])){
-                       include("pay_offline.php");
                    }
                    
                    ?>

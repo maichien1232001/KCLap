@@ -60,13 +60,10 @@ if(isset($_REQUEST['p_cat'])&&is_array($_REQUEST['p_cat'])){
 
 ?>
 
-<div class="panel panel-default sidebar-menu"><!-- panel panel-default sidebar-menu Begin -->   
-</div><!-- panel panel-default sidebar-menu Finish -->
-
 <div class="panel panel-default sidebar-menu"><!-- panel panel-default sidebar-menu Begin -->
     <div class="panel-heading"><!-- panel-heading Begin -->
         <h3 class="panel-title">
-            Categories
+            Hãng
 
             <div class="pull-right"><!-- pull-right Begin -->
             
@@ -74,7 +71,7 @@ if(isset($_REQUEST['p_cat'])&&is_array($_REQUEST['p_cat'])){
                 
                     <span class="nav-toggle hide-show"><!-- nav-toggle hide-show Begin -->
                     
-                        Hide
+                        Ẩn
                     
                     </span><!-- nav-toggle hide-show Finish -->
                 
@@ -89,7 +86,7 @@ if(isset($_REQUEST['p_cat'])&&is_array($_REQUEST['p_cat'])){
     
         <div class="panel-body"><!-- panel-body 1 Begin -->
             <div class="input-group"><!-- input-group Begin -->
-                <input type="text" class="form-control" id="dev-table-filter" data-filters="#dev-cat" data-action="filter" placeholder="Filter Categories">
+                <input type="text" class="form-control" id="dev-table-filter" data-filters="#dev-cat" data-action="filter" placeholder="Nhập hãng bạn cần tìm">
 
                     <a class="input-group-addon"><!-- input-group-addon Begin -->
                     
@@ -111,15 +108,6 @@ if(isset($_REQUEST['p_cat'])&&is_array($_REQUEST['p_cat'])){
 
                     $cat_id = $row_cat['cat_id'];
                     $cat_title = $row_cat['cat_title'];
-                    $cat_image = $row_cat['cat_image'];
-
-                    if($cat_image == ""){
-
-                    }else{
-
-                        $cat_image = "<img src='admin_area/other_images/$cat_image' width='20px'>&nbsp;";
-
-                    }
 
                     echo "
                     <li style='background:#dddddd' class='checkbox checkbox-primary'>
@@ -137,7 +125,6 @@ if(isset($_REQUEST['p_cat'])&&is_array($_REQUEST['p_cat'])){
                             echo " value='$cat_id' type='checkbox' class='get_cat' name='cat'>
 
                             <span>
-                            $cat_image
                             $cat_title
                             </span>
 
@@ -157,15 +144,6 @@ if(isset($_REQUEST['p_cat'])&&is_array($_REQUEST['p_cat'])){
 
                     $cat_id = $row_cat['cat_id'];
                     $cat_title = $row_cat['cat_title'];
-                    $cat_image = $row_cat['cat_image'];
-
-                    if($cat_image == ""){
-
-                    }else{
-
-                        $cat_image = "<img src='admin_area/other_images/$cat_image' width='20px'>&nbsp;";
-
-                    }
 
                     echo "
                     <li class='checkbox checkbox-primary'>
@@ -183,7 +161,6 @@ if(isset($_REQUEST['p_cat'])&&is_array($_REQUEST['p_cat'])){
                                 echo " value='$cat_id' type='checkbox' class='get_cat' name='cat'>
 
                                 <span>
-                                $cat_image
                                 $cat_title
                                 </span>
 
@@ -208,7 +185,7 @@ if(isset($_REQUEST['p_cat'])&&is_array($_REQUEST['p_cat'])){
 <div class="panel panel-default sidebar-menu"><!-- panel panel-default sidebar-menu Begin -->
     <div class="panel-heading"><!-- panel-heading Begin -->
         <h3 class="panel-title">
-            Product Categories
+            Màu
 
             <div class="pull-right"><!-- pull-right Begin -->
             
@@ -216,7 +193,7 @@ if(isset($_REQUEST['p_cat'])&&is_array($_REQUEST['p_cat'])){
                 
                     <span class="nav-toggle hide-show"><!-- nav-toggle hide-show Begin -->
                     
-                        Hide
+                        Ẩn
                     
                     </span><!-- nav-toggle hide-show Finish -->
                 
@@ -231,7 +208,7 @@ if(isset($_REQUEST['p_cat'])&&is_array($_REQUEST['p_cat'])){
     
         <div class="panel-body"><!-- panel-body 1 Begin -->
             <div class="input-group"><!-- input-group Begin -->
-                <input type="text" class="form-control" id="dev-table-filter" data-filters="#dev-p-cat" data-action="filter" placeholder="Filter Product Categories">
+                <input type="text" class="form-control" id="dev-table-filter" data-filters="#dev-p-cat" data-action="filter" placeholder="Nhập màu bạn muốn chọn">
 
                     <a class="input-group-addon"><!-- input-group-addon Begin -->
                     
@@ -253,15 +230,6 @@ if(isset($_REQUEST['p_cat'])&&is_array($_REQUEST['p_cat'])){
 
                     $p_cat_id = $row_p_cat['p_cat_id'];
                     $p_cat_title = $row_p_cat['p_cat_title'];
-                    $p_cat_image = $row_p_cat['p_cat_image'];
-
-                    if($p_cat_image == ""){
-
-                    }else{
-
-                        $p_cat_image = "<img src='admin_area/other_images/$p_cat_image' width='20px'>&nbsp;";
-
-                    }
 
                     echo "
                     <li style='background:#dddddd' class='checkbox checkbox-primary'>
@@ -279,7 +247,6 @@ if(isset($_REQUEST['p_cat'])&&is_array($_REQUEST['p_cat'])){
                                 echo " value='$p_cat_id' type='checkbox' class='get_p_cat' name='p_cat'>
 
                                 <span>
-                                $p_cat_image
                                 $p_cat_title
                                 </span>
 
@@ -299,16 +266,7 @@ if(isset($_REQUEST['p_cat'])&&is_array($_REQUEST['p_cat'])){
 
                     $p_cat_id = $row_p_cat['p_cat_id'];
                     $p_cat_title = $row_p_cat['p_cat_title'];
-                    $p_cat_image = $row_p_cat['p_cat_image'];
-
-                    if($p_cat_image == ""){
-
-                    }else{
-
-                        $p_cat_image = "<img src='admin_area/other_images/$p_cat_image' width='20px'>&nbsp;";
-
-                    }
-
+                   
                     echo "
                     <li class='checkbox checkbox-primary'>
 
@@ -325,7 +283,6 @@ if(isset($_REQUEST['p_cat'])&&is_array($_REQUEST['p_cat'])){
                                 echo " value='$p_cat_id' type='checkbox' class='get_p_cat' name='p_cat'>
 
                                 <span>
-                                $p_cat_image
                                 $p_cat_title
                                 </span>
 
