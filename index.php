@@ -4,99 +4,27 @@
     include("includes/header.php");
 
 ?>
-   
+    <link rel="stylesheet" href="admin_area/css/slider.css">
+    <script src="admin_area/js/slider.js"></script>
    <div class="container" id="slider"><!-- container Begin -->
-       
-       <div class="col-md-12"><!-- col-md-12 Begin -->
-           
-           <div class="carousel slide" id="myCarousel" data-ride="carousel"><!-- carousel slide Begin -->
-               
-               <ol class="carousel-indicators"><!-- carousel-indicators Begin -->
-                   
-                   <li class="active" data-target="#myCarousel" data-slide-to="0"></li>
-                   <li data-target="#myCarousel" data-slide-to="1"></li>
-                   <li data-target="#myCarousel" data-slide-to="2"></li>
-                   <li data-target="#myCarousel" data-slide-to="3"></li>
-                   
-               </ol><!-- carousel-indicators Finish -->
-               
-               <div class="carousel-inner"><!-- carousel-inner Begin -->
-                  
-                  <?php 
-                   
-                   $get_slides = "select * from slider LIMIT 0,1";
-                   
-                   $run_slides = mysqli_query($con,$get_slides);
-                   
-                   while($row_slides=mysqli_fetch_array($run_slides)){
-                       
-                       $slide_name = $row_slides['slide_name'];
-                       $slide_image = $row_slides['slide_image'];
-                       $slide_url = $row_slides['slide_url'];
-                       
-                       echo "
-                       
-                       <div class='item active'>
-                       
-                           <a href='$slide_url'>
 
-                                <img src='admin_area/slides_images/$slide_image'>
-
-                           </a>
-                       
-                       </div>
-                       
-                       ";
-                       
-                   }
-                   
-                   $get_slides = "select * from slider LIMIT 1,3";
-                   
-                   $run_slides = mysqli_query($con,$get_slides);
-                   
-                   while($row_slides=mysqli_fetch_array($run_slides)){
-                       
-                       $slide_name = $row_slides['slide_name'];
-                       $slide_image = $row_slides['slide_image'];
-                       $slide_url = $row_slides['slide_url'];
-                       
-                       echo "
-                       
-                       <div class='item'>
-                       
-                           <a href='$slide_url'>
-
-                                <img src='admin_area/slides_images/$slide_image'>
-
-                           </a>
-                       
-                       </div>
-                       
-                       ";
-                       
-                   }
-                   
-                   ?>
-                   
-               </div><!-- carousel-inner Finish -->
-               
-               <a href="#myCarousel" class="left carousel-control" data-slide="prev"><!-- left carousel-control Begin -->
-                   
-                   <span class="glyphicon glyphicon-chevron-left"></span>
-                   <span class="sr-only">Trước</span>
-                   
-               </a><!-- left carousel-control Finish -->
-               
-               <a href="#myCarousel" class="right carousel-control" data-slide="next"><!-- left carousel-control Begin -->
-                   
-                   <span class="glyphicon glyphicon-chevron-right"></span>
-                   <span class="sr-only">Sau</span>
-                   
-               </a><!-- left carousel-control Finish -->
-               
-           </div><!-- carousel slide Finish -->
-           
-       </div><!-- col-md-12 Finish -->
+        <!-- slider -->
+        <section class="slideshow">
+            <div class="content">
+                <div class="slider-content">  
+                    <figure class="shadow"><img src="laptop_immg/laptop/s1.png"></figure>
+                    <figure class="shadow"><img src="laptop_immg/laptop/s2.png"></figure>
+                    <figure class="shadow"><img src="laptop_immg/laptop/s11.png"></figure>
+                    <figure class="shadow"><img src="laptop_immg/laptop/s3.png"></figure>
+                    <figure class="shadow"><img src="laptop_immg/laptop/Category_Page_Inspiron_7400.png"></figure>
+                    <figure class="shadow"><img src="laptop_immg/laptop/s4.png"></figure>
+                    <figure class="shadow"><img src="laptop_immg/laptop/s6.png"></figure>
+                    <figure class="shadow"><img src="laptop_immg/laptop/s7.png"></figure>
+                    <figure class="shadow"><img src="laptop_immg/laptop/s8.jpg"></figure>
+                    <figure class="shadow"><img src="laptop_immg/laptop/s9.jpg"></figure>
+                </div>
+            </div>
+        </section>
        
    </div><!-- container Finish -->
    
