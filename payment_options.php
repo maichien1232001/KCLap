@@ -11,31 +11,15 @@
     $row_customer = mysqli_fetch_array($run_customer);
     
     $customer_id = $row_customer['customer_id'];
+
+    echo "<script>alert('Đơn đặt hàng của bạn đã được gửi, Cảm ơn')</script>";
+        
+    echo "<script>window.open('customer/my_account.php?my_orders','_self')</script>";
+
+    include("customer/my_orders.php")
     
     ?>
+
+
     
-    <h1 class="text-center">Tùy chọn thanh toán cho bạn</h1>  
     
-     <p class="lead text-center"><!-- lead text-center Begin -->
-         
-         <a href="order.php?c_id=<?php echo $customer_id ?>"> Thanh toán ngoại tuyến </a>
-         
-     </p><!-- lead text-center Finish -->
-     
-     <center><!-- center Begin -->
-         
-        <p class="lead"><!-- lead Begin -->
-            
-            <a href="#">
-                
-                Thanh toán Paypal
-                
-                <img class="img-responsive" src="images/paypall_img.png" alt="img-paypall">
-                
-            </a>
-            
-        </p> <!-- lead Finish -->
-         
-     </center><!-- center Finish -->
-    
-</div><!-- box Finish -->
