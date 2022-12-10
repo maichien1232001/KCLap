@@ -248,7 +248,7 @@ if(isset($_GET['order_id'])){
                        
                        <div class="form-group"><!-- form-group Begin -->
                            
-                         <label> Số tiền đã gửi: </label>
+                         <label> Số tiền đã trả: </label>
                           
                           <input type="text" class="form-control" name="amount_sent" required>
                            
@@ -260,11 +260,7 @@ if(isset($_GET['order_id'])){
                           
                           <select name="payment_mode" class="form-control"><!-- form-control Begin -->
                               
-                            <option> Chọn chế độ thanh toán </option>
-                            <option> Quét mã QR </option>
-                            <option> Thanh toán qua Paypal </option>
                             <option> Trả tiền trực tiếp </option>
-                            <option> Thanh toán qua Western Union </option>
                               
                           </select><!-- form-control Finish -->
                            
@@ -280,7 +276,7 @@ if(isset($_GET['order_id'])){
                        
                        <div class="form-group"><!-- form-group Begin -->
                            
-                         <label> Thanh toán qua Paypal / Trả tiền trực tiếp / Mã Western Union: </label>
+                         <label> Trả tiền trực tiếp </label>
                           
                           <input type="text" class="form-control" name="code" required>
                            
