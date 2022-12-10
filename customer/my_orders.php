@@ -2,8 +2,6 @@
     
 <h1> Đơn đặt hàng </h1>
     
-    <p class="lead"> Đơn đặt hàng của bạn ở một nơi</p>
-    
     <p class="text-muted">
         
     Nếu bạn có bất kỳ câu hỏi nào, vui lòng <a href="../contact.php">Liên hệ</a>. Dịch vụ khách hàng của chúng tôi <strong>24/7</strong>
