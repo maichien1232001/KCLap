@@ -26,7 +26,7 @@
                 <th> Số tiền phải trả: </th>
                 <th> Số hóa đơn: </th>
                 <th> Số lượng: </th>
-                <th> Kiểu: </th>
+                <th> Loại: </th>
                 <th> Ngày đặt hàng:</th>
                 <th> Đã thanh toán / Chưa thanh toán: </th>
                 <th> Trạng thái: </th>
