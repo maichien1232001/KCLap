@@ -20,7 +20,7 @@
                
            </div><!-- col-md-12 Finish -->
            
-           <div class="col-md-12"><!-- col-md-12 Begin -->
+           <div class="account_center" style="margin-top: 5%; width: 60%; margin-left: 20%;"><!-- col-md-12 Begin -->
                
                <div class="box"><!-- box Begin -->
                    
