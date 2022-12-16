@@ -358,16 +358,16 @@ include("functions/functions.php");
                                </div><!-- form-group Finish -->
                                
                                <div class="form-group"><!-- form-group Begin -->
-                                   <label class="col-md-5 control-label">Dòng máy</label>
+                                   <label class="col-md-5 control-label">Loại</label>
                                    
                                    <div class="col-md-7"><!-- col-md-7 Begin -->
                                        
                                        <select name="product_type" class="form-control" required oninput="setCustomValidity('')" oninvalid="setCustomValidity('Bạn phải chọn 1 dòng máy')"><!-- form-control Begin -->
                                           
-                                           <option value="" disabled selected>Chọn dòng máy</option>
-                                           <option>Cổ điển</option>
-                                           <option>Hiện đại</option>
-                                           <option>Chơi game</option>
+                                           <option value="" disabled selected>Chọn loại</option>
+                                           <option>Thường</option>
+                                           <option>Pro</option>
+                                           <option>Gaming</option>
                                            
                                        </select><!-- form-control Finish -->
                                        
